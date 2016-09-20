@@ -1,5 +1,16 @@
-\documentclass{report}
+\documentclass[12pt]{report}
 \usepackage{suthesis-2e}
+\usepackage{fancyhdr}
+%\usepackage{pslatex}
+%\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{apacite}
+%\usepackage{covington}
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{booktabs}
+\usepackage{setspace}
+\doublespacing
+
 \dept{Psychology}
 
 \begin{document}
@@ -20,7 +31,8 @@ I would like to thank...
 \afterpreface
 
 % https://github.com/samfcmc/ist-dissertation-latex-template - to make modular.
-
+% OUTLINE: https://docs.google.com/document/d/1yaEI3AYkT3LTNtRKNAWOPFA0j6a3rUEjPA5yi8CWFGE/edit
+\cite{haspelmath2005world}
 \input{chapters/1_introduction.tex}
 \input{chapters/2_evidence_for_bias.tex}
 \input{chapters/3_what_is_complexity.tex}
@@ -30,7 +42,7 @@ I would like to thank...
 
 \appendix
 \chapter{A Long Proof}
-...
-\bibliographystyle{apacite2}
-\bibliography{dissertation}
+..
+\bibliographystyle{apacite}
+\bibliography{dissertation.bib}
 \end{document}
