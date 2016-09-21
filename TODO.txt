@@ -1,0 +1,6 @@
+TO DO
+
+Formatting
+give all figures and tables labels, and make sure referenced in text appropriatele
+give figs/tables short and long title
+update with new citations

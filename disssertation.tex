@@ -1,16 +1,14 @@
 \documentclass[12pt]{report}
 \usepackage{suthesis-2e}
-\usepackage{fancyhdr}
-%\usepackage{pslatex}
-%\usepackage{amssymb}
-\usepackage{graphicx}
+\usepackage[demo]{graphicx} %demo arg - doesn't load figs; makes rendering faster
 \usepackage{apacite}
-%\usepackage{covington}
-%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{url}
 \usepackage{booktabs}
+\usepackage{pslatex}
 \usepackage{setspace}
-\doublespacing
+\usepackage{array,multirow}
 
+\doublespacing
 \dept{Psychology}
 
 \begin{document}
@@ -28,11 +26,16 @@ This thesis tells you all you need to know about...
 \prefacesection{Acknowledgments}
 I would like to thank...
 
+%\setcounter{tocdepth}{1} TOC depth
+%\FloatBarrier  % barrier to float placement of figures
+%\caption[This appears in the list of figures]{This appears under the figure.} % caption in TOC vs under pic
+
+
 \afterpreface
 
 % https://github.com/samfcmc/ist-dissertation-latex-template - to make modular.
 % OUTLINE: https://docs.google.com/document/d/1yaEI3AYkT3LTNtRKNAWOPFA0j6a3rUEjPA5yi8CWFGE/edit
-\cite{haspelmath2005world}
+
 \input{chapters/1_introduction.tex}
 \input{chapters/2_evidence_for_bias.tex}
 \input{chapters/3_what_is_complexity.tex}
@@ -42,7 +45,8 @@ I would like to thank...
 
 \appendix
 \chapter{A Long Proof}
-..
+
 \bibliographystyle{apacite}
-\bibliography{dissertation.bib}
+\bibliography{dissertation}
+
 \end{document}
