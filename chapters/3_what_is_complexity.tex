@@ -5,20 +5,20 @@
 
 \cite{laurence1999concepts,anaki2009familiarity,feldman2016simplicity,goodman2008rational,haskell2011linguistic,lupyan2008conceptual,feldman2000minimization}
 
-
+OUTLINE DIFFERENT THEORIES. The goal is not to distinguish between these different theories, but rather to consider each as a framework for understanding conceptual complexity.
 
 \bgroup
 \def\arraystretch{1.5}% 
 
 \begin{table}[t]
-\footnotesize
+%\footnotesize
 \centering
 \begin{tabular}{l l l l l }
  \toprule
  \textbf{Theory} &  \textbf{\begin{tabular}[c]{@{}l@{}}Relevant\\Dimension\end{tabular}} & \textbf{Prediction}& \textbf{\begin{tabular}[c]{@{}l@{}}Relevant\\Studies\end{tabular}} \\
  \toprule
 Classical  & \# of primitives & \multicolumn{1}{p{5cm}}{Concepts with longer definitions (and thus more primitives) will be more complex.} & Studies 1-3 \\
-Classical  & Entropy of associates & \multicolumn{1}{p{5cm}}{Concepts with  more associates }  & Study 4\\
+Classical  & Entropy of associates & \multicolumn{1}{p{5cm}}{Concepts with higher entropy of associates  will be more complex.}  & Study 4\\
 
 Exemplar   &  \# of exemplars & \multicolumn{1}{p{5cm}}{Concepts with more  exemplars will be more complex.} & Studies 5-6  \\
 Prototype  & \# of exemplars & \multicolumn{1}{p{5cm}}{Concepts with fewer exemplars will have more uncertainty, and thus be more complex.} & Studies 5-6     \\
@@ -31,9 +31,9 @@ Prototype  & Amount of variability &\multicolumn{1}{p{5cm}}{ Concepts with more 
 \egroup
 
 \section{Experiment 1: Descriptions of objects}
-In Chapter 2, we presented participants with novel, real objects and measured their complexity through explicit judgements (Exp.\ 4) and study time (Exp.\ 8b). Both of these measures showed variability, suggesting that these objects differed in their complexity. However, these measures do not tell us {\it what} differs across objects; what makes one object more complex than another. The Classical Theory of concepts would suggest that these objects differ in complexity because they are composed of different number of conceptual primitives, with more complex objects containing more primitives that simpler objects. 
+In Chapter 2, we presented participants with novel, real objects and measured their complexity through explicit judgements (Exp.\ 4; pg.\ \pageref{ch2-4}) and study time (Exp.\ 8b; pg.\ \pageref{ch2-8b}). Both of these measures showed variability, suggesting that these objects differed in their complexity. However, these measures do not tell us {\it what} differs across objects; what makes one object more complex than another. The Classical Theory of concepts would suggest that these objects differ in complexity because they are composed of different number of conceptual primitives, with more complex objects containing more primitives that simpler objects. 
 
-In Experiment 1, we reasoned that, if true, these primitives should be reflected in participants linguistic descriptions of the objects. In particular, we predicted that objects rated as more complex and studied longer in Exp.\ 4 and 8b (Chapter 2) should also be described with longer descriptions. We tested this prediction by presenting participants with an object and asking them to produce a written linguistic description of the object.
+In Experiment 1, we reasoned that, if true, these primitives should be reflected in participants linguistic descriptions of the objects. In particular, we predicted that objects rated as more complex and studied longer in Exp.\ 4 and 8b (Chapter 2) should also be described with longer descriptions. We tested this prediction by asking participants to produce written linguistic description of the objects.
 
 
 
@@ -41,7 +41,7 @@ In Experiment 1, we reasoned that, if true, these primitives should be reflected
 \subsubsection{Participants} 
 In this and all subsequent experiments, participants were recruited on Amazon Mechanical Turk and received US \$0.15-0.30 for their participation, depending on the length of the task. 60 participants completed this first experiment.
 \subsubsection{Stimuli} 
-We used the same set of 60 novel real objects as in Chapter 2 (Fig. \ref{fig:realobjs}).
+We used the same set of 60 novel real objects as in Chapter 2 (Fig. \ref{fig:realobjs}; pg.\ \pageref{fig:realobjs}).
 
 \subsubsection{Procedure}
 On each trial, we presented a single object and following instructions:  ``Look at the object below. Imagine you just received this object as a gift. Describe what the object looks like to a friend." Participants then entered their description in a text box below the object.
@@ -61,7 +61,7 @@ Each participant described 10 objects in total. Five objects were from the top q
                    & ``cup holder"                                   \\
                    & ``it is a bowl with a black portion on top"      \\
                    & ``football kicker's stand"                      \\
-                   & ``portable toilet"                              \\
+                   & ``a hole type thing"                              \\
                    & ``it looks like an ash tray, but a bit shallow" \\
                    & ``looks like a dog bowl" \\
  \bottomrule
@@ -82,7 +82,7 @@ Each participant described 10 objects in total. Five objects were from the top q
 \end{table}
 
 
-Example descriptions for a low and high complexity object are presented in Table~\ref{tab:sample_obj_descriptions}. We considered two measures of length:  log number of characters and log number of words. Across objects, the mean length of description was  $M = 8.82$ words ($SD = 1.14$) and $M = 36.31$ characters ($SD = 4.69$).
+Example descriptions for a sample low and high complexity object are presented in Table~\ref{tab:sample_obj_descriptions}. We considered two measures of length:  log number of words and log number of characters. Across objects, the mean length of description was  $M = 8.82$ words ($SD = 1.14$) and $M = 36.31$ characters ($SD = 4.69$).
 
  \begin{figure}
  \begin{center}
@@ -92,15 +92,15 @@ Example descriptions for a low and high complexity object are presented in Table
 \end{figure}
 
 
-The key question was whether the description length was related to the psychological correlates of complexity measured in Chapter 2: Explicit ratings and study times.
-To test this question we fit a  linear mixed-effect model predicting log number of words with complexity norms as a fixed effect, and a second model predicting log number of characters with study times as a fixed effect. As evident from Table~\ref{tab:sample_obj_descriptions}, participants varied considerably in the  syntactic construction of their descriptions as well as overall  length, making it important to control for this variability using a  mixed-effect model. The random effect structure included by-participant intercepts and by-trial slopes. There was a reliable relationship between log number of words and  complexity norms ($\beta=.2$, $t =2.8$; Fig~\ref{fig:desc_length}), and between number of words and study times ($\beta=.59$, $t =3.07$). The same pattern held for log number of characters. 
+The key question was whether the description length was related to the psychological correlates of complexity measured in Chapter 2, explicit ratings and study times.
+To test this question we fit a  linear mixed-effect model predicting log number of words with complexity norms as a fixed effect, and a second model predicting log number of words with study times as a fixed effect. As evident from Table~\ref{tab:sample_obj_descriptions}, participants varied considerably in the  syntactic construction of their descriptions as well as overall  length, making it important to control for this variability using a  mixed-effect model. The random effect structure included by-participant intercepts and by-trial slopes. There was a reliable relationship between log number of words and  complexity norms ($\beta=.2$, $t =2.8$; Fig~\ref{fig:desc_length}), and between log number of words and log study time ($\beta=.59$, $t =3.07$). The same pattern held for log number of characters. 
 
 In the context of the Classical Theory of concepts, this result suggests a connection between conceptual complexity and number of primitives: More conceptually complex objects have longer descriptions, and thus more primitives. 
 
 \section{Experiment 2a: Definitions of words}
 Experiment 1 suggested objects that appear visually more complex are described with longer descriptions. The studies in Chapter 2, however, suggest that the construct of conceptual complexity extends beyond visual complexity to abstract word meanings. This predicts the length of a dictionary definition of a word should be correlated with the conceptual complexity of its meaning. In light of the complexity bias observed in Chapter 2, we also predict that words with more complex definitions should be longer and have definitions that are rated as more complex. In Experiment 2 we tested these predictions by presenting participants with the definition of low frequency English words  and asking them to rate the conceptual complexity of the definition.
 
-We selected low frequency words for two reasons. First, because participants were unlikely to know the word associated with the definition, knowledge of a word's length was unlikely to affect the complexity judgement. Second, because the words were uniformly low frequency, this reduced the possibility that differences in word length were due to frequency, rather than conceptual complexity. 
+We selected low frequency words for several reasons. First, because participants were unlikely to know the word associated with the definition, knowledge of a word's length was unlikely to affect the complexity judgement. Second, because the words were uniformly low frequency, this reduced the possibility that differences in word length were due to frequency, rather than conceptual complexity. Finally, because participants were unlikely to know the words, we could conduct a follow-up experiment (2b) asking participants to map the meanings to novel words, without knowledge of the English word interfering with this judgement.
 
 \subsection{Methods}
 
@@ -108,7 +108,7 @@ We selected low frequency words for two reasons. First, because participants wer
 200 participants completed the task.
 
 \subsubsection{Stimuli} 
-We selected 100 dictionary definitions of low-frequency words (Table~\ref{tab:sample_word_defs}). 
+We selected 100 dictionary definitions of low-frequency words (see Table~\ref{tab:sample_word_defs} for examples). 
 
 \begin{table}[t!]
 \centering
@@ -132,7 +132,7 @@ We selected 100 dictionary definitions of low-frequency words (Table~\ref{tab:sa
 
 
 \subsubsection{Procedure}
-The task was identical to Experiment 9 in Chapter 2, except that participants were presented with definitions rather than words. Participants were first presented with instructions describing the norming task:
+The task was identical to Experiment 9 in Chapter 2 (pg.\ \pageref{ch2-9}), except that participants were presented with definitions rather than words. Participants were first presented with instructions describing the norming task:
 \begin{quote}
 In this experiment, you will be shown the definition of a word and asked to decide how complex the meaning is. A word's meaning is simple if it is easy to understand and has few parts. An example of a simple meaning is ``brick.'' A word's meaning is complex if it is difficult to understand and has many parts. An example of a more complex meaning is ``engine.''
 \end{quote}
@@ -141,12 +141,12 @@ For each definition, we then asked ``How complex is this definition?,'' and part
 \subsection{Results and Discussion}
 The central prediction is that definitions with more primitives in the definition, operationalized as the length of the definition, should be rated as conceptually more complex. To test this prediction, we fit a linear mixed-effect model predicting complexity ratings with log number of words in the definition as a fixed effect. The random effect structure included by-participant intercepts and by-trial slopes. As predicted, there was a strong relationship between complexity ratings and log number of words ($\beta=1.50$, $t =27.94$). The same pattern held for log number of characters.
 
-A secondary prediction was that there should be a relationship between the length of the definition and the length of the word: If languages encode the conceptual complexity of a word's meaning in the length of the word, longer words should be associated with longer definitions. This prediction was not supported ($r=.05$, $p =.59$). Finally, we should also expect that  longer words should be associated with definitions rated as more complex. We fit the same mixed-effect model as above to test this prediction, except with log number of characters in the word as a fixed effect. There was a significant relationship between word length and rating judgements ($\beta=.52$, $t =2.86$), suggesting more complex definitions area associated with longer words. However, in a model with both word length and definition length as fixed effects, word length was no longer a reliable predictor of complexity ratings ($\beta=.18$, $t =1.19$).
+A secondary prediction is that there should be a relationship between the length of the definition and the length of the word: If languages encode the conceptual complexity of a word's meaning in the length of the word, longer words should be associated with longer definitions. This prediction was not supported ($r=.05$, $p =.59$). Finally, we should also expect that  longer words should be associated with definitions rated as more complex. We fit the same mixed-effect model as above to test this prediction, except with log number of characters in the word as a fixed effect. There was a significant relationship between word length and rating judgements ($\beta=.52$, $t =2.86$), suggesting more complex definitions area associated with longer words. However, in a model with both word length and definition length as fixed effects, word length was no longer a reliable predictor of complexity ratings ($\beta=.18$, $t =1.19$).
 
-In sum, we find a strong relationship between definition length and conceptual ratings, as predicted by Classical Theory of concepts: Longer definitions, with more primitives, are rated as more complex. We do not, however, find the predicted relationship between the conceptual complexity of the definition and word length, as would be predicted by the studies in Chapter 1.  One possible explanation for this null finding is that participants' complexity ratings were driven by the linguistic complexity of the definition, rather than its conceptual complexity. In other words, participants may have  rated longer definitions as more complex {\it because} they were longer, not because they were more conceptually complex. The current design does not allow us to distinguish these two possibilities. In Study 3, we try to address this confound more directly. 
+In sum, we find a strong relationship between definition length and conceptual ratings, as predicted by Classical Theory of concepts: Longer definitions, with more primitives, are rated as more complex. We do not, however, find the predicted relationship between the conceptual complexity of the definition and word length, as would be predicted by the studies in Chapter 1.  One possible explanation for this null finding is that participants' complexity ratings were driven by the linguistic complexity of the definition, rather than its conceptual complexity. In other words, participants may have  rated longer definitions as more complex {\it because} they were longer, not because they were more conceptually complex. The current design does not allow us to distinguish these two possibilities.
 
-\section{Experiment 2b: Definition mapping}.
-If definition length is related to conceptual complexity and participants have a complexity bias, we predict that participants should be biased to map longer definitions on to  longer words. In Experiment 2b, we test this prediction in an experiment analogous to the word mapping experiments in Chapter 2. Participants were presented with a meaning---a definition---and asked to guess the translation of the meaning in an alien language from two possible alternatives, one long and one short. 
+\section{Experiment 2b: Definition mapping}
+If definition length is related to conceptual complexity and participants have a complexity bias, we predict that participants should be biased to map more complex definitions on to longer words. In Experiment 2b, we test this prediction in an experiment analogous to the word mapping experiments in Chapter 2. Participants were presented with a meaning---a definition---and asked to guess the translation of the meaning in an alien language from two possible alternatives, one long and one short. 
 
 \subsection{Methods}
 \subsubsection{Participants} 
@@ -159,16 +159,14 @@ Participants were first presented with the following instructions:
 \begin{quote}
 In this experiment, you will see the definition of a word. Your job is to guess what the translation of that word is in an alien language. You will make your guess by betting on two possible words in the alien language. Imagine you have a \$100 dollars. To place your bet, assign an amount to each of the words. Your bets must add to 100.
 \end{quote}
-Participants then viewed a definition and two possible alternative words, one short and one long. Participants selected a response by placing a numeric bet under each word.  Each participant rated 10 definitions in total. 
+Participants then viewed a definition and two possible alternative words, one short and one long. Participants selected a response by placing a numeric bet (0-100) under each word.  Each participant rated 10 definitions in total. 
 
 \subsection{Results and Discussion}
-Correlated with conceptual ratings
-correlated with definition length
-IN model with both, mostly just defintion length.
+Consistent with previous evidence, we found a complexity bias in participants mappings from definition to words: Participants tended to map definitions rated as more complex in Experiment 2a to longer words ($r = .39$,  $p< .0001$). However, there was also a strong correlation between participants bets to longer words and definition length, measured in terms of log number of characters ($r = .82$, $p< .0001$). In an additive linear model predicting bets to the long word with both complexity norms and definition length, definition length ($\beta=3.81$, $t =2.64$, $p<.01$) was a significant predictor of bets, but complexity norms were not ($\beta=1.02$, $t =1.38$, $p=.17$). 
 
-Suggests participants just matching long definition to long word. Need better way to measure the primitives in. See Study 3.
+While this result is consistent with a complexity bias, as well as the pattern of complexity predicted by the classical theory of concepts, it is difficult to make strong causal inferences from these data. The fact that definition length accounts for more variance in bets than complexity norms suggests that it may be linguistic complexity, rather than conceptual complexity that is driving this bias. This result may simply reflect participants bias to map long definitions to long words. This result, while a positive finding, does not speak to the claim directly that it is {\it conceptual} complexity per se that is related to definition length and the bias in word length. In Study 3, we try to address this issue more directly. 
 
-\section{Study 3: McCrae feature norms}
+\section{Study 3: Feature norms}
 The above approach is messy. 
 
 \subsection{Methods}
@@ -180,30 +178,62 @@ The above approach is messy.
 \subsection{Results and Discussion}
 
 \section{Experiment 5a: Simultaneous frequency}
-Both 
+We now turn to predictions about conceptual complexity from other theories of concepts: Exemplar and prototype theories. Both of these theories predict that aspects of experience should influence the representation of a concept, and thus the conceptual complexity of the concept. In particular, each makes predictions about the influence of observing individual exemplars of a concept.  Importantly, however, these two theories make different predictions about the direction of this influence. Under the exemplar theory, a participant who observes more exemplars of a concept would have a representation of the concept that contained more individual exemplars. This is the case of an expert: A person who is a bird expert, for example, would have many exemplars of birds as part of the concept bird. This might mean that this concept has overall higher fidelity, than for a non-bird expert. Thus, the exemplar theory predicts that concepts with more observed exemplars will be more complex.
+
+In contrast, the prototype theory predicts that participants represent only summary statistics over exemplars. If true, this means that the more exemplars a participant observes the less uncertainty there will be about the underlying concept; the concept prototype. Thus, the prototype theory predicts that the more exemplars a participant observes from a given concept, the {\it less} conceptually complex that concept will be. This prediction also falls out of an information theoretic account: Objects that appear more frequently are less surprising, and thus less conceptually complex.
+
+In Experiment 5, we explore the possibility that the number of exemplars a participant observes influences the conceptual complexity of the concept. We present participants with either a few or many exemplars of a concept, and then ask participants to map that concept to either a short or long label. Under either theory, if conceptual complexity is related to exemplar frequency, we should expect the number of exemplars observed to influence how a concept is mapped to words of varying length. Under the exemplar theory, we expect long words to map to concepts with many exemplars, and under the prototype theory, we expect long words to map to concepts with few exemplars.
+
 \subsection{Methods}
 \subsubsection{Participants} 
 477 participants completed the experiment.
 \subsubsection{Stimuli} 
-\subsubsection{Procedure}
-We presented participants with 10 objects on a single screen. The objects were composed of a single geon. There were two types of objects. One object type appeared nine times and the second object type appeared once. After this training period, participants completed a forced choice mapping task, as in Studies 1 and 5. We presented a word that was either 2 or 4 syllables long and asked participants to make a judgment about whether the word referred to the low or high frequency object. Each participant completed a single mapping trial, and word length was manipulated between participants.
+The objects were composed of a single geon, similar to those used in Expts.\ 1-3 in Chapter 2. The linguistic stimuli were novel words composed of either 2 (e.g., ``tupa," ``gabu," ``fepo")  or 4  (e.g., ``tupabugorn," ``gaburatum," ``fepolopus")  syllables.
 
- \subsection{Results and Discussion}
- Selections between the two conditions did not differ (?2(1) = 0.02, p = .89).
+\subsubsection{Procedure}
+We presented participants with 10 objects on a single screen with a cover story that the objects were from a character's box (see Fig.\ \ref{fig:seqfreq_display} for precise text). Participants were required to click on a question mark to reveal each object. There were always two types of objects. One object type appeared nine times and the second object type appeared once. Order of presentation was randomized.
+
+After this training phase, participants completed a forced choice mapping task, as in Studies 1 and 5 in Chapter 2 (pg.\ \pageref{ch2-1} and pg.\ \pageref{ch2-5}). We presented a short or long word and asked participants to make a judgment about whether the word referred to the low or high frequency object. Each participant completed a single mapping trial, and word length was manipulated between participants.
+
+ \begin{figure}
+ \begin{center}
+  \includegraphics[width=3.5in]{figs/seqfreq_display.png}
+  \caption{\label{fig:seqfreq_display} Sample display in training phase in Experiment 5a.}
+ \end{center}
+\end{figure}
+
+
+ \subsection{Results}
+ Selections between the two conditions did not differ (${\chi}^2$$(1) = 0.02$, $p = .89$; Fig.\ \ref{fig:freq_plots}, left).
+ 
+  \begin{figure}
+ \begin{center}
+  \includegraphics[width=6in]{figs/freq_plots.pdf}
+  \caption{\label{fig:freq_plots} Proportion participants selecting the low frequency object as a function of language condition, in Exp.\ 5a (left) and Exp.\ 5b (right). Error bars are 95\% confidence intervals.}
+ \end{center}
+\end{figure}
+
 
 
 \section{Experiment 5b: Sequential frequency}
+Given the null finding in Experiment 5a, we next explore whether the timing of the presentation of exemplars affects complexity. Previous work has shown that participants may induce different concepts depending on whether or not exemplars are presented simultaneously, as in Exp. 5a,  or sequentially \cite<e.g.>{spencer2011}. In Experiment 5b, we present exemplars sequentially such that only one exemplar is visible at any given time. 
 
 \subsection{Methods}
 \subsubsection{Participants} 
 97 participants completed the experiment.
 \subsubsection{Stimuli} 
+
+The objects were the set of novel, real objects used form Chapter 2, Expts.\ 4-6. 
+
 \subsubsection{Procedure}
-We manipulated object frequency by sequentially presenting objects. Participants saw 60 objects from the set of normed real objects one at a time. One object was presented 10 times and a second object was presented 40 times. Ten additional objects were included as fillers. After this training phase, participants completed a single mapping trial as in Experiment 5a. Word length was manipulated between participants.
+We manipulated object frequency by sequentially presenting objects. Participants saw 60 objects one at a time for 750 ms per object. One object was presented 10 times and a second object was presented 40 times. Ten additional objects were included as fillers, each appearing once. These were included to make the critical manipulation less obvious. Order of presentation was randomized. After this training phase, participants completed a single mapping trial as in Experiment 5a. Word length was manipulated between participants.
+
 \subsection{Results and Discussion}
-Selections between the two conditions did not differ (?2(1) = 0.01, p = .92).
+Selections between the two conditions did not differ (${\chi}^2$$(1) = 0.01$, $p = .92$; Fig.\ \ref{fig:freq_plots}, right). Across Expts.\ 5a and 5b, we find no evidence that the frequency of exemplars is related to the conceptual complexity of objects.
 
 \section{Experiment 6: Facts}
+In Experiment 6, we again test the hypothesis that the number of observed exemplars is related to conceptual complexity, as predicted by both the exemplar and prototype theories. However, in the present experiment, we explore the possibility that perhaps raw number of times an exemplar is observed is not the psychologically relevant dimension of frequency. We instead whether {\it conceptual} frequency, or markedness, is related to conceptual complexity by teaching participants facts about novel objects. 
+
 \subsection{Methods}
 \subsubsection{Participants} 
 \subsubsection{Stimuli} 
@@ -211,6 +241,7 @@ Selections between the two conditions did not differ (?2(1) = 0.01, p = .92).
 \subsection{Results and Discussion}
 
 \section{Experiment 7: Concept variability}
+Finally, we test an alternative hypothesis about conceptual complexity: A concept is conceptually complex if its exemplars are highly variable. This is predicted by 
 \subsection{Methods}
 \subsubsection{Participants} 
 \subsubsection{Stimuli} 
