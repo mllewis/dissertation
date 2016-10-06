@@ -3,9 +3,26 @@
 \chapter{What is conceptual complexity?}
 \label{chapter:complexity}
 
-\cite{laurence1999concepts,anaki2009familiarity,feldman2016simplicity,goodman2008rational,haskell2011linguistic,lupyan2008conceptual,feldman2000minimization}
+The studies in Chapter 2 provide robust evidence for a regularity between word length and a dimension of word meaning, complexity. In these studies, we operationalized the notion of complexity by manipulating the visual complexity of objects in terms of number of component parts. We found that the number of parts  positively correlated with participants' study time in a memory task, providing additional evidence that the stimulus complexity was psychologically relevant. Furthermore, we found that the notion of conceptual complexity extended beyond the visual domain to abstract word meanings in natural language. This finding points to a theory of conceptual complexity that is more general than simply the number of visual parts associated with an object.  Notably, however, this work leaves open the important question of what exactly this theory is---what makes one meaning more conceptually complex than another?  In Chapter 3, we try to more directly address this question. 
 
-OUTLINE DIFFERENT THEORIES. The goal is not to distinguish between these different theories, but rather to consider each as a framework for understanding conceptual complexity.
+To formalize the notion of complexity, we adopt an information theoretic approach \cite{shannon1948}. The central idea of Information Theory is that, within a communication channel, each meaning $m$ is communicated with probability $p$, such that the amount information conveyed by each occurrence of $m$ is $-log(p_i)$. Critically, if it is assumed that the overall length of the communication channel is minimized, then meanings should be assigned to codes in a particular way: less probable meanings should be assigned to longer codes. By making these assumptions, we establish a fundamental link between the amount of information in a code, its probability of occurrence and its length. In our work here, we appeal to this framework to derive a metric of complexity: More complex codes are longer, less probable, and contain more information.\footnote{This relationship is reflected in the idea of minimum description length proposed by Kolmogorov and others: In a maximally compressed code, more complex codes are longer.} 
+
+Information Theory thus provides a  starting point for asking questions about whether a particular meaning has greater conceptual complexity than another by providing a quantitative measure of complexity. But, an important property of this theory is that the metric of complexity depends on the representational framework. In other words, what counts as ``one unit" of code in the  channel depends on the representational system that is assumed. The representational agnosticism of Information Theory thus implies that a meaning that is relatively more complex in one representational framework may relatively less complex in another, or that  complexity in one representational framework may be entirely unrelated to conceptual complexity.
+
+In the case of concepts, it is not a priori obvious what representational framework is most useful in describing their psychological status; what the ``communication channel" of concepts is. The most intuitive is perhaps the Classical Theory of concepts, where the units of  representation are primitives and a language for combining them. To illustrate, consider the geon stimuli from Chapter 2:  If we assume that a ``unit" is equivalent to a geon,  then an object composed of a sphere and cone has a conceptual complexity of two, and an object composed of only a sphere, has a conceptual complexity of one. This is the representational framework that is most similar to the approach in Chapter 2. 
+
+Importantly, however, the literature on concepts and categories has explored range of alternatives to the Classical Theory \cite{laurence1999concepts}, which we consider in this chapter. In particular,  we consider how the following three theories may be related to conceptual complexity:
+\begin{quote}
+	(1) {\it Classical Theory}: Concepts are represented as a structured set of attributes.\\
+	(2) {\it Exemplar Theory}: Concepts are represented as the set of individual exemplars.\\
+	(3) {\it Prototype Theory}: Concepts are represented as summary representations of exemplars.	
+\end{quote}
+For each theory of concepts, we apply Information Theory and ask what would make one concept more complex than another, assuming the representational framework of that theory. Briefly, for the Classical Theory, a more complex concept is one with a longer description length. For the Exemplar theory, a more complex concept is one with more stored exemplars. Finally, for the Prototype Theory, we assume that a more complex concept is one with more uncertainty. We return to these predictions in more detail below.
+
+We see our goal as not  to distinguish between these three theories of concepts, nor even that they are incompatible with each other \cite{murphy2015there,briscoe2011conceptual}. Rather, we consider each of these theories as paradigms, in a Kuhnian sense, and ask whether these frameworks can inform our understanding of conceptual complexity when considered in the context of Information Theory. Our approach will be to manipulate the complexity of meanings as defined within a particular theory of concepts, and ask whether our manipulation influences the length of the word that meaning is mapped to. Evidence that a manipulation of conceptual complexity is related to word length would shed light on the underlying construct of conceptual complexity.  
+
+In what follows, we review previous work related to each theory of concepts followed by  a series of empirical studies testing  predictions of the theory. In total, we conduct seven studies exploring various predictions of the three theories of concepts (see Table~\ref{tab:complexity_pred_summary_table} for summary of our studies). We conclude with a brief summary of our results. 
+
 
 \bgroup
 \def\arraystretch{1.5}% 
@@ -19,18 +36,26 @@ OUTLINE DIFFERENT THEORIES. The goal is not to distinguish between these differe
  \toprule
 Classical  & \# of primitives & \multicolumn{1}{p{5cm}}{Concepts with longer definitions (and thus more primitives) will be more complex.} & Studies 1-3 \\
 Classical  & Entropy of associates & \multicolumn{1}{p{5cm}}{Concepts with higher entropy of associates  will be more complex.}  & Study 4\\
-
 Exemplar   &  \# of exemplars & \multicolumn{1}{p{5cm}}{Concepts with more  exemplars will be more complex.} & Studies 5-6  \\
 Prototype  & \# of exemplars & \multicolumn{1}{p{5cm}}{Concepts with fewer exemplars will have more uncertainty, and thus be more complex.} & Studies 5-6     \\
-Prototype  & Variability of exemplars &\multicolumn{1}{p{5cm}}{ Concepts with more variable exemplars will be more complex.} & Study 7 \\
+Prototype/Exemplar  & Variability of exemplars &\multicolumn{1}{p{5cm}}{ Concepts with more variable exemplars will be more complex.} & Study 7 \\
  \bottomrule
 \end{tabular}
 \caption{Summary of studies.}
-\label{complexity_pred_summary_table}
+\label{tab:complexity_pred_summary_table}
 \end{table}
 \egroup
 
-\section{Experiment 1: Descriptions of objects}
+\section{Classical Theory}
+
+
+\cite{laurence1999concepts,anaki2009familiarity,feldman2016simplicity,goodman2008rational,haskell2011linguistic,lupyan2008conceptual,feldman2000minimization}
+
+Psychological metrics of complexity - trasnfer vs. recognition. 
+
+If, however, we assume a different representational framework, we might code this same object with a single conceptual primitive, ``ice cream cone."
+
+\subsubsection{Experiment 1: Descriptions of objects}
 In Chapter 2, we presented participants with novel, real objects and measured their complexity through explicit judgements (Exp.\ 4; pg.\ \pageref{ch2-4}) and study time (Exp.\ 8b; pg.\ \pageref{ch2-8b}). Both of these measures showed variability, suggesting that these objects differed in their complexity. However, these measures do not tell us {\it what} differs across objects; what makes one object more complex than another. The Classical Theory of concepts would suggest that these objects differ in complexity because they are composed of different number of conceptual primitives, with more complex objects containing more primitives that simpler objects. 
 
 In Experiment 1, we reasoned that, if true, these primitives should be reflected in participants linguistic descriptions of the objects. In particular, we predicted that objects rated as more complex and studied longer in Exp.\ 4 and 8b (Chapter 2) should also be described with longer descriptions. We tested this prediction by asking participants to produce written linguistic description of the objects.
@@ -46,7 +71,7 @@ We used the same set of 60 novel real objects as in Chapter 2 (Fig. \ref{fig:rea
 \subsubsection{Procedure}
 On each trial, we presented a single object and following instructions:  ``Look at the object below. Imagine you just received this object as a gift. Describe what the object looks like to a friend." Participants then entered their description in a text box below the object.
 
-Each participant described 10 objects in total. Five objects were from the top quantile (high complexity) and 5 objects were from the bottom quantile (low complexity). Order of objects was randomized.
+Each participant described 10 objects in total. Five objects were from the top quantile (high complexity) and 5 objects were from the bottom quantile (low complexity). Order of objects was randomized across trials.
 
 \subsection{Results and Discussion}
 
@@ -82,7 +107,7 @@ Each participant described 10 objects in total. Five objects were from the top q
 \end{table}
 
 
-Example descriptions for a sample low and high complexity object are presented in Table~\ref{tab:sample_obj_descriptions}. We considered two measures of length:  log number of words and log number of characters. Across objects, the mean length of description was  $M = 8.82$ words ($SD = 1.14$) and $M = 36.31$ characters ($SD = 4.69$).
+Example descriptions for a sample low and high complexity object are presented in Table~\ref{tab:sample_obj_descriptions}. We considered two measures of length:  log number of words and log number of characters. Across objects, the mean length of description was  $8.82$ words ($SD = 1.14$) and $36.31$ characters ($SD = 4.69$).
 
  \begin{figure}
  \begin{center}
