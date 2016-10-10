@@ -11,17 +11,16 @@ Information Theory thus provides a  starting point for evaluating the complexity
 
 In the case of concepts, it is not a priori obvious what representational framework is most useful in describing their psychological status; what the ``communication channel" of concepts is. The most intuitive is perhaps the Classical Theory of concepts \cite{laurence1999concepts}, where the units of  representation are primitives and a language for combining them. To illustrate, consider the geon stimuli from Chapter 2:  If we assume that a ``unit" is equivalent to a geon,  then an object composed of a sphere and cone has a conceptual complexity of two, and an object composed of only a sphere, has a conceptual complexity of one. This is the representational framework that is most similar to the approach in Chapter 2. 
 
-Importantly, however, the literature on concepts and categories has explored a range of alternatives to the Classical Theory \cite{laurence1999concepts}, which we consider in this chapter. In particular,  we consider how the following three theories may be related to conceptual complexity:
+Importantly, however, the literature on concepts and categories has explored a range of alternatives to the Classical Theory \cite{laurence1999concepts}, which we consider in this chapter. In particular,  we consider how the following two views may be related to conceptual complexity:
 \begin{quote}
-	(1) {\it Classical Theory}: Concepts are represented as a structured set of primitives.\\
-	(2) {\it Exemplar Theory}: Concepts are represented as the set of individual exemplars.\\
-	(3) {\it Prototype Theory}: Concepts are represented as summary representations of exemplars.
+	(1) {\it Classical View}: Concepts are represented as a structured set of primitives.\\
+	(2) {\it Statistical View}: Concepts are represented as the set of individual exemplars (Exemplar Theory), or as summary representations of exemplars (Prototype Theory).
 \end{quote}
-We consider each of these theories in the broadest form, abstracting away from the many variants within each theory. We then apply Information Theory to each theory of concepts and ask what would make one concept more complex than another, assuming the representational framework of that theory. Briefly, for the Classical Theory, a more complex concept is one with a longer description length. For the Exemplar theory, a more complex concept is one with more stored exemplars. Finally, for the Prototype Theory, we assume that a more complex concept is one with more uncertainty. We return to these predictions in more detail below.
+We consider each of these views in the broadest form, abstracting away from the many variants within each theory. We then apply Information Theory to each view of concepts and ask what would make one concept more complex than another, assuming the representational framework of that theory. Briefly, for the Classical View, a more complex concept is one with a longer description length. For the Statistical View, a more complex concept is one with more stored exemplars (Exemplar Theory), or with more uncertainty (Prototype Theory). We return to these predictions in more detail below.
 
-We see our goal as not  to distinguish between these three theories of concepts, nor even that they are incompatible with each other \cite{murphy2015there,briscoe2011conceptual}. Rather, we consider each of these theories as paradigms, in a Kuhnian sense, and ask whether these frameworks can inform our understanding of conceptual complexity when considered in the context of Information Theory. Our approach will be to manipulate the complexity of meanings as defined within a particular theory of concepts, and ask whether our manipulation influences the length of the word that meaning is mapped to. Evidence that a manipulation of conceptual complexity is related to word length would shed light on the underlying construct of conceptual complexity.  
+We see our goal as not  to distinguish between these  views of concepts, nor even that they are incompatible with each other \cite<e.g.,>{murphy2015there,briscoe2011conceptual}. Rather, we consider each of these views as paradigms, in a Kuhnian sense, and ask whether these frameworks can inform our understanding of conceptual complexity when considered in the context of Information Theory. Our approach will be to observe variability in the complexity of meanings as defined within a particular theory of concepts, and ask whether this variability is related to the length of the word that meaning is mapped to. Evidence that a manipulation of conceptual complexity is related to word length would shed light on the underlying construct of conceptual complexity.  
 
-In what follows, we review previous work related to each broad theory of concepts followed by  a series of empirical studies testing  predictions of the theory. In total, we conduct seven studies exploring various predictions of the three theories of concepts (see Table~\ref{tab:complexity_pred_summary_table} for summary of our studies). We conclude with a brief summary of our results. 
+In what follows, we review previous work related to each broad view of concepts---Classical and Statistical---followed by  a series of empirical studies testing  predictions of each view. In total, we conduct seven studies exploring various predictions these theories(see Table~\ref{tab:complexity_pred_summary_table} for summary of our studies). We conclude with a brief summary of our results. 
 
 
 \bgroup
@@ -32,13 +31,14 @@ In what follows, we review previous work related to each broad theory of concept
 \centering
 \begin{tabular}{l l l l l }
  \toprule
- \textbf{Theory} &  \textbf{\begin{tabular}[c]{@{}l@{}}Relevant\\Dimension\end{tabular}} & \textbf{Prediction}& \textbf{\begin{tabular}[c]{@{}l@{}}Relevant\\Studies\end{tabular}} \\
+ \textbf{View} &  \textbf{\begin{tabular}[c]{@{}l@{}}Relevant\\Dimension\end{tabular}} & \textbf{Prediction}& \textbf{\begin{tabular}[c]{@{}l@{}}Relevant\\Studies\end{tabular}} \\
  \toprule
-Classical  & \# of primitives & \multicolumn{1}{p{5cm}}{Concepts with longer definitions (and thus more primitives) will be more complex.} & Studies 1-3 \\
-Classical  & Entropy of associates & \multicolumn{1}{p{5cm}}{Concepts with higher entropy of associates  will be more complex.}  & Study 4\\
-Exemplar   &  \# of exemplars & \multicolumn{1}{p{5cm}}{Concepts with more  exemplars will be more complex.} & Studies 5-6  \\
-Prototype  & \# of exemplars & \multicolumn{1}{p{5cm}}{Concepts with fewer exemplars will have more uncertainty, and thus be more complex.} & Studies 5-6     \\
-Prototype/Exemplar  & Variability of exemplars &\multicolumn{1}{p{5cm}}{ Concepts with more variable exemplars will be more complex.} & Study 7 \\
+Classical  & \# of primitives & \multicolumn{1}{p{5cm}}{Concepts with longer definitions (and thus more primitives) will be more complex.} & Studies 1-4 \\
+Statistical: Exemplar   &  \# of exemplars & \multicolumn{1}{p{5cm}}{Concepts with more  exemplars will be more complex.} & Studies 5-6  \\
+Statistical: Exemplar  & Variability of exemplars &\multicolumn{1}{p{5cm}}{Concepts with more variable exemplars will be more complex.} & Study 7 \\
+Statistical: Prototype  & \# of exemplars & \multicolumn{1}{p{5cm}}{Concepts with fewer exemplars will have more uncertainty, and thus be more complex.} & Studies 5-6     \\
+Statistical: Prototype  & Variability of exemplars &\multicolumn{1}{p{5cm}}{ Concepts with more variable exemplars will have more uncertainty, and thus be more complex.} & Study 7 \\
+
  \bottomrule
 \end{tabular}
 \caption{Summary of studies.}
@@ -47,17 +47,19 @@ Prototype/Exemplar  & Variability of exemplars &\multicolumn{1}{p{5cm}}{ Concept
 \egroup
 
 \section{Classical Theory}
-A concept in the Classical Theory is defined by a rule, or definition, composed of a structured set of conceptual primitives. These definitions are typically considered deterministic of category membership, but more recent work has considered this theory in a statistical framework \cite{goodman2008rational}.
+A concept in the Classical Theory is defined by a rule, or definition, composed of a structured set of conceptual primitives. These definitions are typically considered deterministic of category membership, but more recent work has considered this theory in a probabilistic framework \cite{goodman2008rational}.
 
 This theory has been productively instantiated with Boolean concepts and first-order logic \cite{shepard1961learning,feldman2000minimization,goodman2008rational}.  In this  framework, there are a set of primitives concepts, or predicates, that are represented by binary features, and a syntax for combining them given by first order logic.  For example, consider the concept if \textsc{mother}: If \textsc{female} and \textsc{has\_child} were primitives in the representational language, then  \textsc{mother} would denote the set of people where both primitives were true. 
 
-The information theoretic measure of complexity falls straight-forwardly out of this formulation: Concepts defined by more primitives are more complex \cite{shepard1961learning,feldman2000minimization,goodman2008rational}. In the  above example, then, the complexity of the concept  \textsc{mother} would be two. Consistent with this proposal, there is evidence to suggest that the difficulty of acquiring a concept scales with its conceptual complexity: More difficult concepts to learn are also longer \cite{shepard1961learning,feldman2000minimization}.
+The information theoretic measure of complexity falls straight-forwardly out of this formulation: Concepts defined by more primitives are more complex \cite{shepard1961learning,feldman2000minimization,goodman2008rational}. In the  above example, then, the complexity of the concept  \textsc{mother} would be two. Consistent with this proposal, there is evidence to suggest that the difficulty of acquiring a concept scales with its conceptual complexity: Concepts that are more difficult to learn tend to have longer definitions\cite{shepard1961learning,feldman2000minimization}.
 
 An important issue for this theory of concepts is identifying a general set of conceptual primitives. Although this task might rank among the deepest challenges for cognitive science, some work has attempted this task. A body of research has sought to understand the innate conceptual primitives in young children (``core knowledge''; Kinzler \& Spelke, 2007). \nocite{kinzler2007core} The proposed set of concepts in this work, however, is restricted to those present only  in early development (e.g., ``agent"), and is therefore not suitable for the broad scope of our current project.  Wierzbicka and colleagues (1996) have also  sought  to identify conceptual primitives, but with a more general focus.  \nocite{wierzbicka1996semantics} This work compares lexical systems across languages  to identify common primitives. The hypothesis is that there exists universal and innate semantic primitives which are the building blocks of meaning in human language. Under this view, all meanings can be derived from a set of numerable semantic primitives and a syntax for combining them.
 
-A related issue is whether the set of primitive concepts  changes over time: Might the conceptual complexity of a concept reduce with experience? That is, might a concept that is initially complex reduce in  complexity, such that it itself becomes an atomic unit in other concepts? This possibility is intriguing, but it remains an open question what sort of experience might lead to a reduction in complexity. One possibility is that the very act of labeling a concept reduces the complexity of a concept\cite{bruner1956austin}. This proposal is consistent with a large body of literature suggesting advantages in concept learning for labeled as opposed to unlabeled categories \cite<e.g.>{balaban1997,lupyan2007,sloutsky2001}. However, there is reason to think that other aspects of experience might affect the conceptual complexity of concepts since the length of words can change over time. For example, the word ``telephone" has become more typically ``phone" in standard usage. This type of  diachronic reduction in word length may be due to factors  unrelated to conceptual complexity (e.g.\ frequency of usage), but it might also reflect a decrease in conceptual complexity due to experience, beyond simply tokening the concept. Our work here does not directly address the character of the underlying  primitives, nor whether they are universal or innate or change over time. Rather, it assumes only that such units exist for a speaker and that lexical meanings can vary in the number of their compositional primitives. 
+A related issue is whether the set of primitive concepts  changes over time: Might the conceptual complexity of a concept reduce with experience? That is, might a concept that is initially complex reduce in  complexity, such that it itself becomes an atomic unit in other concepts? This possibility is intriguing, but it remains an open question what sort of experience might lead to a reduction in complexity. One possibility is that the very act of labeling a concept reduces the complexity of a concept\cite{bruner1956austin}. This proposal is consistent with a large body of literature suggesting advantages in concept learning for labeled as opposed to unlabeled categories \cite<e.g.>{balaban1997,lupyan2007,sloutsky2001}. 
 
-Motivated by the Classical Theory of concepts, Studies 1-4  explore whether the definition length of a concepts  is related to the length of the label denoting that concept. We find some evidence in support of this proposal.
+However, there is reason to think that other aspects of experience might affect the conceptual complexity of concepts since the length of words can change over time. For example, the word ``telephone" has become more typically ``phone" in standard usage. This type of  diachronic reduction in word length may be due to factors  unrelated to conceptual complexity (e.g.\ frequency of usage), but it might also reflect a decrease in conceptual complexity due to experience, beyond simply tokening the concept. Our work here does not directly address the character of the underlying  primitives, nor whether they are universal or innate or change over time. Rather, it assumes only that such units exist for a speaker and that lexical meanings can vary in the number of their compositional primitives. 
+
+Motivated by the Classical Theory of concepts, Studies 1-4  explore whether the definition length of a concept  is related to the length of the label denoting that concept. In these studies, we assume that words denote conceptual units, such that concepts associated with longer linguistic definitions are  more complex. We find some evidence in support of this hypothesis.
 
 
 %``length of the shortest Boolean formula logically equivalent to the concept"
@@ -208,22 +210,86 @@ Consistent with previous evidence, we found a complexity bias in participants ma
 While this result is consistent with a complexity bias, as well as the pattern of complexity predicted by the classical theory of concepts, it is difficult to make strong causal inferences from these data. The fact that definition length accounts for more variance in bets than complexity norms suggests that it may be linguistic complexity, rather than conceptual complexity that is driving this bias. This result may simply reflect participants bias to map long definitions to long words. This result, while a positive finding, does not speak to the claim directly that it is {\it conceptual} complexity per se that is related to definition length and the bias in word length. In Study 3, we try to address this issue more directly. 
 
 \section{Study 3: Feature norms}
-The above approach is messy. 
+Study 3 provides a strong test of the Classical Theory by examining the conceptual primitives of a concept through feature norms. Feature norms are collected by presenting participants with the name of a concept (e.g., ``moose") and asking them to produce as many features of the concept as possible (e.g., ``has for legs", ``has antlers"). If we assume that the features participants generate correspond to conceptual primitives in the definition of that concept, then the Classical Theory of concepts predicts that concepts with more  features should be more conceptually complex. If true, we should also expect concepts associated with more features to have longer labels. We test this prediction using a set of previously-collected feature norms.
 
-\subsection{Methods}
+\subsection{Method}
+We analyzed feature norms for a set of 541 nouns \cite{mcrae2005semantic}. For each noun concept, we examined the relationship between the length of the word and the number of unique features participants listed for that concept. A feature was excluded from this measure if it was listed by fewer than 5 of 30 participants or described a taxonomic associate of the concept (subordinate or superordinate). Taxonomic associates were excluded because they are conceptually different than features which describe parts and functions. Word length was measured in terms of log number of characters. We also included spoken frequency of the target noun as a covariate in our models, measured from the Subtlex-us database \cite{brysbaert2009moving}. 
+
 \subsection{Results and Discussion}
+We first analyzed the simple correlation between word length and the number of features and found no relationship ($r=-.03$, $p=.54$)  However, spoken frequency is a strong, independent correlate of word length \cite{zipf1936}, and so it is important to control for this variability in measuring the relationship between number of features and word length. We fit an additive linear model predicting word length with both log spoken frequency and number of features.  There was a  relationship between number of features and word length (Fig.\ \ref{fig:feature_plot}): Longer words tended to have more features. Model parameters are presented in Table~\ref{study3amodel}.\footnote{We also fit the same model with the measure of number of features that included taxonomic features. In this model, the relationship between length and number of features was marginal ($\beta=0.08$, $t =1.92$, $p=.06$).} 
 
-\section{Study 4: Entropy of associates}
-\subsection{Methods}
+  \begin{figure}
+ \begin{center}
+  \includegraphics[width=4.5in]{figs/feature_plot.pdf}
+  \caption{\label{fig:feature_plot} Study 3 results: Frequency-residualized word length (measured in log number of characters) as a function of the number of unique features associated with the concept a word denotes. }
+ \end{center}
+\end{figure}
 
-\section{Exemplar Theory}
-Exemplar Theory provides a second paradigm for considering the relative complexity of concepts. In this framework, a concept is represented as the set of individual exemplars observed of that category, with no additional compression of the concept in long term memory \cite<e.g.,>{medin1978context}. To operationalize complexity in this framework, we can again apply the description length criteria of Information Theory. If the primitives of representation are individual exemplars, then a more complex concept is one with more stored exemplars. 
+% latex table generated in R 3.3.0 by xtable 1.8-2 package
+% Mon Oct 10 13:57:56 2016
+\begin{table}[t!]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & Estimate & SE & t-value & p-value \\ 
+  \hline
+(Intercept) & 2.2411 & 0.0638 & 35.13 & $p<.001$ \\ 
+  Num. features & 0.0112 & 0.0043 & 2.59 & $p<.01$ \\ 
+  Log frequency & -0.2626 & 0.0214 & -12.29 & $p<.001$  \\ 
+   \hline
+\end{tabular}
+\caption{Model parameters for linear regression predicting word length in terms of number of features, controlling for word frequency.}
+\label{study3amodel}
+\end{table}
+
+This finding is consistent with the Classical View of concepts, and suggests that conceptual complexity may be associated with the number of ``primitive" features associated with a concept.
+
+\section{Study 4: Concept associates}
+One limitation of Study 3 is the relatively small set of words used in the dataset. In Study 4, we aimed to replicate Study 3 with a larger dataset. We analyzed data from a word-association dataset in which participants were presented with a word asked to generate three ``related" words. This task differs notably from the feature norms described in Study 3 in that participants were allowed to generate any word related to the target, not simply ``features" that describe part of the target. While this is potentially a limitation of the current approach, we note that the distinction between features and associates is fuzzy. We find  the same pattern as in Study 3: Longer words tend to have more associates. 
+
+The larger set of cue words in this dataset allowed us to also examine the relationship between the complexity norms collected in  Experiment 9 in Chapter 2 (pg.\ \pageref{ch2-9}) and the number of associates. We reasoned that if the number of associates was related to conceptual complexity, we should expect these two variables to be positively correlated. This prediction was also supported.
+
+\subsection{Method}
+We analyze an existing dataset containing word associations for  10,050 English words, collected from 73,256 participants \cite{de2013bettter}. The words include all grammatical classes. In the task, participants were presented with a cue and  asked to type ``the first  three words that came to mind." Each participant completed 15-19 trials. 
+
+\subsection{Results and Discussion}
+As in Study 3, we first tested for a relationship between log word length in characters and number of unique associates. Word length was positively correlated with number of associates ($r = .11$, $p< .5$; see Table~\ref{study4corrl} for all correlations).  Next, in order to control for the effect of word frequency on length, we fit an additive linear model predicting word length with number of associates and word frequency. Controlling for frequency, the relationship between number of associates and word length remained reliable ($\beta=0.004$, $t =27.34$, $p<.0001$).
+
+Finally, we examined the relationship between the conceptual complexity norms from  Experiment 9 in Chapter 2  and number of associates. There were 431 words that overlapped between the two datasets. As predicted, there was a strong correlation between the conceptual complexity norms and number of associates: Words rated as more conceptual complex tended to have more associates ($r = .23$, $p< .0001$).
+
+
+% latex table generated in R 3.3.0 by xtable 1.8-2 package
+% Mon Oct 10 16:07:48 2016
+\begin{table}[t!]
+\centering
+\begin{tabular}{llll}
+  \hline
+ & Log length (char.)  & Complexity norms &   Num. associates  \\ 
+  \hline
+Log length (char.) &  &  &  \\ 
+Complexity norms  &  0.61**** &  &  \\ 
+ Num. associates &  0.11*    &  0.23**** &  \\ 
+ Log frequency& -0.54**** & -0.33**** &  0.18**** \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+Limit of this test of the classical approach -- assumes features are linguistically based; may not be true.
+
+\section{Statistical View}
+INTRO THE THEORIES
+Exemplar + frequency
+prototype + frequency
+exemplar + variability
+protype + variabiliyy
+\subsection{exemplar}
+Exemplar Theory provides a second paradigm for considering the relative complexity of concepts. In this framework, a concept is represented as the set of individual exemplars observed of that category, with no additional compression of the concept in long term memory \cite<e.g.,>{medin1978context}. To operationalize complexity in this framework, we can again apply the description length criteria of Information Theory. If the primitives of representation are individual exemplars, then a more complex concept is one with more stored exemplars. W
 
 How does frequency relate to concept learning. 
 Evaluate: ease of learning model vs. transfer
 Salthouse (1977): more exemplars increases recognition reaction time for letters, but NOT dot patterns (a concept) [same holds for accuracy)
 Difference goes away with only a little bit of exposure
-Argue there is an effect of number of exmplars only early in learning 
+Argue there is an effect of number of exemplars only early in learning 
 
 - More exemplars more transfer; worse memory for individual exemplars (see Omohunder, 1981; King and Newman, 1982)
 - Familiarity speeds visual search paradigms (Wang, Cavaneough, Green 1994 ) 
@@ -329,8 +395,7 @@ Participants were presented with the following instructions:
 \begin{quote}
 In this experiment, you will learn facts about objects but the name of the object will be missing. For example, a fact like, ``Mops are used for cleaning the floor," will appear as ``$\rule{1cm}{0.15mm}$s are used for cleaning the floor." After you memorize these facts, you will then be asked to guess the name for each object. 
 \end{quote}
-
-Participants  then saw with all 8 facts paired with an object. The facts appeared just as in  Table \ref{tab:facts}, with a blank for the name of the object. Participants were allowed to study the fact-object pairings for as long as they wanted. They then proceeded to a test phase where  each object was shown next to a multiple choice set of all 8 facts. For each object, participants had to select which fact from the training phase was true of that object. Participants were then given feedback about their responses, and repeated the study and test phase until all 8 facts were correctly recalled. 
+Participants  then saw  all 8 facts paired with an object. The facts appeared just as in  Table \ref{tab:facts}, with a blank for the name of the object. Participants were allowed to study the fact-object pairings for as long as they wanted. They then proceeded to a test phase where  each object was shown next to a multiple choice set of all 8 facts. For each object, participants had to select which fact from the training phase was true of that object. Participants were then given feedback about their responses, and repeated the study and test phase until all 8 facts were correctly recalled. 
 
 Next, participants completed a mapping task as in previous experiments. Participants saw a novel word and two objects and were asked to guess which object the word referred to. Each participant completed four mapping trials, two with long words and two with short words. The pairs of objects in each trial were from the same fact category (``facebook," ``money," ``talk," or ``use"). Thus, each trial required participants to make a judgement about the meaning of a word between a low  and high conceptutally-frequent object. Order of categories was counterbalanced across participants. Word lengths were randomized across trials. 
 
