@@ -10,10 +10,12 @@ A universal property of languages is that they contain units of meaningful sound
 In Chapter 4, we turn away from the question of what the complexity is to the question of {\it why}: Why is there a complexity bias in the lexica of natural languages? We take as the central datum to be explained the bias in natural language for longer words to map onto more complex meanings (Studies 9 and 10 in Chapter 2).  To answer this question, we first consider the hypothesis space of the origins of a complexity bias in the lexicon. We then present a series of four studies that shed light on the relative likelihood of these different hypotheses. 
 
 \subsection{Hypotheses about the origins of a complexity bias}
-The conceptual framework of  timescales is useful in understanding the space of hypotheses about the origins of a complexity bias. We assume that a complexity bias in natural language emerges at the timescale of language evolution. Critically, we also assume that the bias at the timescale of language evolution must have emerged---at some point---as the product of processes at shorter timescales, even if indirectly. In particular, we consider pressures at three different shorter timescales:  in-the-moment, pragmatic, and acquisition. Below we describe four different hypotheses of pressures at shorter timescales that would, over time, lead to a complexity bias in the lexica of natural languages at the language evolution timescale (summarized in Table \ref{tab:bias_hypotheses}).
+The conceptual framework of  timescales is useful in understanding the space of hypotheses about the origins of a complexity bias. We assume that a complexity bias in natural language emerges at the timescale of language evolution. Critically, we also assume that the bias at the timescale of language evolution must have emerged---at some point---as the product of processes at shorter timescales, even if indirectly. In particular, we consider pressures at three different shorter timescales:  in-the-moment, pragmatic, and acquisition. Below we describe four different hypotheses of pressures at shorter timescales that would, over time, lead to a complexity bias in the lexica of natural languages at the evolution timescale. These pressures are summarized in Table \ref{tab:bias_hypotheses}.
 
 
 \hspace*{.3 cm}{ \it 1.\ The Efficient Naming Hypothesis.} To understand one variant of this hypothesis, consider the following fable: At the beginning of linguistic time, names were assigned to objects by length, starting with the shortest. Objects were named in the order that they were observed or as they became communicatively relevant. Since more frequent or communicatively-relevant objects  tended to be observed earlier, these objects received shorter names, relative to the less frequent objects that were encountered later.   The result is a language the contains a complexity bias in its lexicon.
+
+
 
 
 \bgroup
@@ -132,15 +134,6 @@ To estimate the complexity bias cross-linguistically in this sample, we analyzed
 For each language, we calculated the correlation between word lengths and complexity norms for the sample of 40 words. The distribution of correlations is shown in  
 Figure\ \ref{fig:study1b} ($M = .12$; $SD = .17$). The magnitude of this correlation is affected slightly by the distribution of word lengths in each language, due to restriction of range. We corrected for this bias by calculating the maximum possible correlation be complexity ratings and word lengths in each language, and then normalizing the observed correlation by this maximum value. With this correction, the mean correlation was slightly larger ($M = .13$; $SD = .18$). 
 
-Across languages,  the correlation significantly differed from zero ($ t(1036)= 22.87$; $p <.0001$).  To control for the non-independence of languages from the same linguistic family, we constructed a mixed effect linear model predicting word length with complexity bias as a fixed effect. The random-effect structure included language and language family as both random slopes and intercepts.\footnote{The model specification was as follows: \texttt{word length $\sim$ complexity + (1 + complexity ~\textbar~language family) +  (1 + complexity ~\textbar~language)}. This was the maximal random effect structure that allowed the model to converge.}  The model showed a significant effect of complexity on length ($\beta = .18$, $t = 5.6$), suggesting that the complexity bias is present in a wide range of languages.
-
-We next compared these results to those observed in the sample of 499 words from Study 10 in Chapter 2 (pg.\ \pageref{ch2-10}). Across languages, the mean correlation between length and complexity norms was larger in the Study 10 sample ($M = .34$; $SD = .12$), compared to the current sample ($M = .12$; $SD = .17$). One potential source of this difference could be the degree of sampling error between the two samples: In the sample from Study 10, each language contained 499 words, whereas in the current sample, each language contains only 40 words. To control for this difference, we sampled 40 words from the words from Study 10 and recomputed  the mean correlation across languages. The down-sampled mean was comparable to the original  ($M = .34$; $SD = .17$). 
-
-As described above, the present study and Study 10 (Chapter 2) differ in many ways, making a direct comparison between the two samples difficult. Nevertheless, our best guess is that the overall mean correlation in the present sample is approximately .22  smaller than that in Study 10.  There are a couple possible explanations of this difference. The first is that a complexity bias is smaller in high frequency words, perhaps because high frequency words are most affected by other pressures in the linguistic system \cite{lieberman2007quantifying}. A second possibility is that because our norms were collected in English, we are better able to capture the conceptual complexity of Indo-European languages. The bias is thus smaller in the present study because the sample of language is more diverse.  This second possibility seems unlikely, however, given that the present set of meanings are unlikely to vary dramatically across languages. 
-
-Despite a difference in magnitude, we replicate our finding from Study 10 with a larger and more diverse set of languages. In addition, the fact that we find this bias in a sample of high frequency, high communicative need words, provides some evidence against the Efficient Naming Hypothesis.
-
-
 \begin{figure*}[t!]
 \begin{center}
 \includegraphics[scale = .35]{figs/chap4_1b.pdf}
@@ -149,6 +142,14 @@ Despite a difference in magnitude, we replicate our finding from Study 10 with a
 \label{fig:study1b}
 \end{figure*}
 
+
+Across languages,  the correlation significantly differed from zero ($ t(1036)= 22.87$; $p <.0001$).  To control for the non-independence of languages from the same linguistic family, we constructed a mixed effect linear model predicting word length with complexity bias as a fixed effect. The random-effect structure included language and language family as both random slopes and intercepts.\footnote{The model specification was as follows: \texttt{word length $\sim$ complexity + (1 + complexity ~\textbar~language family) +  (1 + complexity ~\textbar~language)}. This was the maximal random effect structure that allowed the model to converge.}  The model showed a significant effect of complexity on length ($\beta = .18$, $t = 5.6$), suggesting that the complexity bias is present in a wide range of languages.
+
+We next compared these results to those observed in the sample of 499 words from Study 10 in Chapter 2 (pg.\ \pageref{ch2-10}). Across languages, the mean correlation between length and complexity norms was larger in the Study 10 sample ($M = .34$; $SD = .12$), compared to the current sample ($M = .12$; $SD = .17$). One potential source of this difference could be the degree of sampling error between the two samples: In the sample from Study 10, each language contained 499 words, whereas in the current sample, each language contains only 40 words. To control for this difference, we sampled 40 words from the words from Study 10 and recomputed  the mean correlation across languages. The down-sampled mean was comparable to the original  ($M = .34$; $SD = .17$). 
+
+As described above, the present study and Study 10 (Chapter 2) differ in many ways, making a direct comparison between the two samples difficult. Nevertheless, our best guess is that the overall mean correlation in the present sample is approximately .22  smaller than that in Study 10.  There are a couple possible explanations of this difference. The first is that a complexity bias is smaller in high frequency words, perhaps because high frequency words are most affected by other pressures in the linguistic system \cite{lieberman2007quantifying}. A second possibility is that because our norms were collected in English, we are better able to capture the conceptual complexity of Indo-European languages. The bias is thus smaller in the present study because the sample of language is more diverse.  This second possibility seems unlikely, however, given that the present set of meanings are unlikely to vary dramatically across languages. 
+
+Despite this difference in magnitude, we replicate our finding from Study 10 with a larger and more diverse set of languages. In addition, the fact that we find this bias in a sample of high frequency, high communicative need words, provides some evidence against the Efficient Naming Hypothesis as the origin of the complexity bias in natural language.
 
 %%%%%%%%STUDY 2a - ELISE %%%%%%%%
 \section{Study 2a: Complexity bias in preschoolers }
@@ -181,12 +182,13 @@ To test the reliability of this difference, we ran a generalized linear mixed mo
 We  ran a series of paired {\it t}-tests to examine response differences between conditions for each age group (3s, 4s, and 5s). There was a reliable difference between conditions for the 5-year-old age group ($t(35) =2.35, p<.05$, $d=.48$), but not the younger groups. 
 
 %These results suggest that older, but not younger,
-These results provide some tentative evidence consistent with the Learning Hypothesis: When faced with novel words, older  preschoolers have an adult-like bias to map longer words onto more complex referents. Nevertheless, it is puzzling why the younger children in our sample, who are likely to be learning many new words, did not show the bias. This null effect may reflect a true absence of a complexity bias in young children. One possible explanation of this absence is that the bias is pragmatically driven and younger children do not have yet have competency in this type of reasoning. This possibility is consistent with a body of work on children's interpretation of scalar implicatures that suggest that reasoning in this age group is fragile and is highly sensitive to aspects of the task \cite<see>[for a review>{horowitz2016the-trouble}. Alternatively, this bias may simply be smaller in this population and we do not have the power to detect it in the current study. The present data do not allow us to distinguish between these two possible explanation of the null finding in the younger children.. 
+\subsection{Discussion}
+These results provide some tentative evidence consistent with the Learning Hypothesis: When faced with novel words, older  preschoolers have an adult-like bias to map longer words onto more complex referents. Nevertheless, it is puzzling why the younger children in our sample, who are likely to be learning many new words, did not show the bias. This null effect may reflect a true absence of a complexity bias in young children. One possible explanation of this absence is that the bias is pragmatically driven and younger children do not have yet have competency in this type of reasoning. This possibility is consistent with a body of work on children's interpretation of scalar implicatures that suggest that reasoning in this age group is fragile and is highly sensitive to aspects of the task \cite<for a review, see>{horowitz2016the-trouble}. Alternatively, this bias may simply be smaller in this population and we do not have the power to detect it in the current study. The present data do not allow us to distinguish between these two possible explanation of the null finding in the younger children.. 
 
 Minimally, however, these data  suggest that relatively young children show a complexity bias, and thus that conceptual complexity may play a role in word learning,  as predicted by the Learning Hypothesis.
 
 %%%%%%%%STUDY 2b - CDI%%%%%%%%
-\section{Study 2b: Complexity and the early vocabulary}
+\section{Study 2b: Conceptual complexity and the early vocabulary}
 In Study 2b, we explore two additional predictions of the Learning Hypothesis:  (1) Children's early vocabulary should contain a complexity bias, and (2) the conceptual complexity of a word's meaning should influence the ease with which words are learned. In particular, we predict that if conceptual complexity is relevant in acquisition, then children should tend to acquire words with simpler meanings before those with more complex meanings.
 
 To test these predictions, we analyzed the conceptual complexity of words in children's early vocabulary using the MacArthur-Bates Communicative Development Inventory \cite<CDI;>{fenson2007}, a parent-report checklist of children's word knowledge. We find evidence consistent with both predictions: Early vocabulary contains a complexity bias, and children tend to learn conceptually simple words before more complex ones.
@@ -207,12 +209,6 @@ The mean complexity rating for the anchor words suggested that participants  int
 \label{fig:study3}
 \end{figure*}
 
-\subsubsection{Analysis 1: Complexity bias in acquisition}
-As in previous studies, there was a reliable correlation between word length and complexity norms: Words whose meanings were rated as more complex tended to be longer ($r=0.35, p<.001$; Figure \ref{fig:study3}). To evaluate this relationship controlling for frequency, we fit an additive linear model predicting word length with frequency (log) and complexity. We used an existing metric of spoken word frequency derived from CHILDES, a child-directed corpus \cite{braginsky2016from}. This measure was only available for the subset of words (Words and Gestures Form; $n = 391$), and thus we only conducted this control analysis on this subset. In this analysis, both complexity ($\beta=.68$, $t=7.51$, $p <.0001$) and spoken word frequency ($\beta=-.52$, $t=-10.44$, $p <.0001$) were reliable predictors of word length, suggesting that complexity accounted for variability in word length over and above spoken frequency.
-
-\subsubsection{Analysis 2: Conceptual complexity as a predictor of age of acquisition}
-In Analysis 2, we asked whether the complexity of a word's meaning predicted its age of production. We estimated the age of acquisition of a word using the measures from \citeA{braginsky2016from}. In this work, age of acquisition for each word is estimated based on a database of CDI parent-report vocabulary forms  from over 42,000 children. \cite<Wordbank;>{frank2016wordbank}. Using this database, \citeA{braginsky2016from} estimated the age of acquisition of each word as the age at which at least 50\% of children produce the word. With these estimates of age of acquisition, we find a reliable correlation between mean age of production of a word and conceptual complexity ($r=.20, p<.0001$; Figure \ref{fig:study3aoa}): Words that are conceptually more complex tend to be produced later in development. 
-
 \begin{figure*}[t!]
 \begin{center}
 \includegraphics[scale = .5]{figs/chap4_aoa.pdf}
@@ -221,9 +217,15 @@ In Analysis 2, we asked whether the complexity of a word's meaning predicted its
 \label{fig:study3aoa}
 \end{figure*}
 
-Importantly, however, the age of acquisition of a word is predicted by many other factors, such as the length of the word itself. Thus, we next asked whether complexity is an independent predictor of variance in the age of acquisition of words. We fit an additive linear model predicting age of production of each word with complexity, and six control variables from \citeA{braginsky2016from}: Word length, spoken frequency, concreteness (abstract vs.\ concrete), babiness (degree of association with infancy), valence (happy vs.\ unhappy), and arousal (excited vs.\ calm).  Again, these control variables were only available for the subset of words on the Words and Gestures Form ($n = 391$), and so we conducted the control analysis only on this subset. All variables were reliable predictors of age of acquisition, except word length and valence. Model fits are shown in Table \ref{tab:aoapred}. This suggests that the complexity of a word's meaning many influence the ease with which a word is acquired in language production: More complex words are produced later.
+\subsubsection{Analysis 1: Complexity bias in acquisition}
+As in previous studies, there was a reliable correlation between word length and complexity norms: Words whose meanings were rated as more complex tended to be longer ($r=0.35, p<.001$; Figure \ref{fig:study3}). To evaluate this relationship controlling for frequency, we fit an additive linear model predicting word length with frequency (log) and complexity. We used an existing metric of spoken word frequency derived from CHILDES, a child-directed corpus \cite{braginsky2016from}. This measure was only available for the subset of words (Words and Gestures Form; $n = 391$), and thus we only conducted this control analysis on this subset. In this analysis, both complexity ($\beta=.68$, $t=7.51$, $p <.0001$) and spoken word frequency ($\beta=-.52$, $t=-10.44$, $p <.0001$) were reliable predictors of word length, suggesting that complexity accounted for variability in word length over and above spoken frequency.
 
-In summary, in acquisition we find that (1) older preschoolers have an in-the-moment complexity bias, (2) children's early vocabulary shows a complexity bias, and (3) complexity predicts the age of acquisition of new words. Taken together, these findings are consistent with the possibility that the  complexity bias observed in natural language may be influenced by a learning bias in children over the course of language acquisition. 
+
+
+
+
+\subsubsection{Analysis 2: Conceptual complexity as a predictor of age of acquisition}
+In Analysis 2, we asked whether the complexity of a word's meaning predicted its age of production. We estimated the age of acquisition of a word using the measures from \citeA{braginsky2016from}. In this work, age of acquisition for each word is estimated based on a database of CDI parent-report vocabulary forms  from over 42,000 children. \cite<Wordbank;>{frank2016wordbank}. Using this database, \citeA{braginsky2016from} estimated the age of acquisition of each word as the age at which at least 50\% of children produce the word. With these estimates of age of acquisition, we find a reliable correlation between mean age of production of a word and conceptual complexity ($r=.20, p<.0001$; Figure \ref{fig:study3aoa}): Words that are conceptually more complex tend to be produced later in development. 
 
 
 % latex table generated in R 3.3.0 by xtable 1.8-2 package
@@ -248,13 +250,68 @@ In summary, in acquisition we find that (1) older preschoolers have an in-the-mo
   \label{tab:aoapred}
 \end{table}
 
+Importantly, however, the age of acquisition of a word is predicted by many other factors, such as the length of the word itself. Thus, we next asked whether complexity is an independent predictor of variance in the age of acquisition of words. We fit an additive linear model predicting age of production of each word with complexity, and six control variables from \citeA{braginsky2016from}: Word length, spoken frequency, concreteness (abstract vs.\ concrete), babiness (degree of association with infancy), valence (happy vs.\ unhappy), and arousal (excited vs.\ calm).  Again, these control variables were only available for the subset of words on the Words and Gestures Form ($n = 391$), and so we conducted the control analysis only on this subset. All variables were reliable predictors of age of acquisition, except word length and valence. Model fits are shown in Table \ref{tab:aoapred}. This suggests that the complexity of a word's meaning many influence the ease with which a word is acquired in language production: More complex words are produced later.
 
+In summary, in acquisition we find that (1) older preschoolers have an in-the-moment complexity bias, (2) children's early vocabulary shows a complexity bias, and (3) complexity predicts the age of acquisition of new words. Taken together, these findings are consistent with the possibility that the  complexity bias observed in natural language may be influenced by a learning bias in children over the course of language acquisition, as predicted by the Learning Hypothesis. 
 
 
 %%%%%%%%STUDY 3%%%%%%%%
 \section{Study 3: Iterated learning in a solo memory task}
 
-In Study 3, 
+In Study 3, we directly explore the Memory Hypothesis as a possible explanation of the origin of the complexity bias in natural language. The Memory Hypothesis posits that speakers mis-remember word forms in a way that is consistent with a complexity bias (shorten simple forms and lengthen complex forms) and, over time, these errors influence the structure of the lexicon.  To test this hypothesis, we use the iterated learning paradigm, a recently-developed method for studying language change in the lab \cite<e.g.,>{kirby2008cumulative,reali2009evolution,smith2010eliminating}. The critical feature of this paradigm is that the learning output of one speaker becomes the learning input for a new speaker. This paradigm allows us to examine the evolution of a language for a ``chain'' of speakers learning and transmitting a language. The dynamics of these chains serve as an approximation of the dynamics of generations of children acquiring and then transmitting language to future generations. 
+
+
+
+A secondary goal of this study is to examine how psychological pressures influence the structure of the lexicon, independent of conceptual pressures.  Forms that are difficult to remember are unlikely to survive in the language  \cite{christiansen2008}, and there may be an additional communicative pressure for economy of expression \cite{zipf1949human}. Both of these pressures might lead to a preference for shorter words over longer, harder-to-produce words, biasing the ultimate structure of the lexicon towards shorter, more memorable words. 
+
+We used an iterated learning paradigm to study the dynamics of these two aspects of the lexicon: how  words change over the course of language evolution and how conceptual complexity interacts with these changes.\footnote{For ease of measurement, we operationalize word length in terms of number of orthographic characters. However, this measure is highly correlated with measures of length with greater psychological reality, such as phonemes and morphemes (see Chapter 2).}As predicted, we find that forms in the lexicon converge to a more stable state and that a complexity bias emerges in the mappings between words and referents. We also find that the complexity bias is attenuated over time. A post-hoc analysis suggests that this change in the complexity bias over time is related to the degree of cross-generational change in the lexicon.
+
+
+\subsection{Method}
+
+Given existing evidence that a complexity bias is present in one-shot learning games \cite{lewisstructure2014}, our experiment was designed to test how conceptual pressures influenced the lexicon over the course of transmission. We asked speakers to learn a novel language that contained meanings of varying complexity and words of varying length. Critically, the language we asked participants to learn contained no systematic relationship between complexity and word length. After studying these mappings, participants were asked to recall them. The measure of interest was the relationship between the errors participants made and the complexity of the referent. If participants show a complexity bias, they should be more likely to add characters for more complex objects and remove characters for less complex objects. 
+
+This design characterized the first generation of our task. We then gave the labels that participants produced in the test phase of this first generation to a new set of speakers and asked them to complete the exact same task. We iterated 7 generations of this task in total.
+
+
+\subsubsection{Participants} 
+
+We recruited 350 participants from Amazon Mechanical Turk. Each generation was composed of 50 learners.
+
+\subsubsection{Stimuli}
+
+The referents were a set of 60 real objects that did not have common labels associated with them. These objects had been normed for their complexity in previous work (Study 4, Chapter 2; Fig.\ \ref{novelrealobjs}). Norms were obtained by asking participants to indicate ``How complicated is this object?" using a slider scale. Norms were highly reliable across two samples of 60 participants. Based on these norms, we divided the objects into quintiles of 12 objects each. Each participant saw 2 objects from each quintile. 
+%\squeezeup
+
+%\begin{figure}[b!]
+%\begin{center}
+%\includegraphics[width = 1\linewidth]{figs/realobjs.pdf}
+%\end{center}
+%\vspace{-.24em}
+%\caption{Object stimuli used in the Experiment. The objects are sorted from least complex (top left) to most complex (bottom right) based on the complexity norms in Chapter 2. Each row corresponds to a quintile.}
+%\label{fig:objs}
+%\vspace{-1em}
+%\end{figure}
+
+
+
+In the first generation, the words were composed of randomly concatenated syllables of 3, 5, 7, 9 or 11 characters in length. Words contained CV syllables and ended in a consonant (e.g., ``gan," ``panur," ``pugimog," ``tigadogog," and ``mogonokigan"). Each participant saw 2 words of each length. The assignment of word lengths to objects was arbitrary.
+
+Participants in Generation 2 were yoked with a participant from this first generation. This meant a participant in Generation 2 would see the exact same set of pictures as the yoked participant from Generation 1, but would learn the labels for those objects that the yoked participant had produced in the testing phase of Generation 1. Order of presentation in the training phase was randomized across generations. We iterated this procedure for a total of 7 generations.
+
+\subsubsection{Procedure} 
+
+
+Participants viewed a webpage that informed them they would be learning the names of 10 objects in an alien language. They were told they would see the names for each object four times and then their memory for the name of each object would be tested. Participants next viewed a screen displaying an object and the associated label below it. Participants pressed the space bar to advance to the next picture. Each picture-word pair was shown four times. 
+
+In the test phase, participants saw a screen with a picture and were asked to type the learned label in a text box below the picture. Memory for each of the 10 objects was tested.
+
+\subsection{Results}
+
+
+
+We conducted three analyses exploring how iterated learning influenced the structure of lexicons.\footnote{All code and data for the paper are available at \url{http://github.com/mllewis/iteratedRC}.} In Analysis 1, we examined the evolution of lexical forms. In Analysis  2, we considered the relationship between word length and referent complexity. This was the key analysis because it allowed us to test for a complexity bias in the lexicon and how this bias changed over time. Finally, in Analysis  3, we conducted a post-hoc analysis to understand the source of variability in cross-generational change in complexity bias across chains.
+
 
 % latex table generated in R 3.1.0 by xtable 1.7-4 package
 % Fri Jan 23 11:41:41 2015
@@ -285,43 +342,7 @@ In Study 3,
 \end{table*}
 \normalsize
 
-
-
-In the present work, we begin to test this hypothesis using the iterated learning paradigm, a recently-developed method for studying language change in the lab \cite<e.g.,>{kirby2008cumulative,reali2009evolution,smith2010eliminating}. The critical feature of this paradigm is that the learning output of one speaker becomes the learning input for a new speaker. This paradigm allows us to examine the evolution of a language for a ``chain'' of speakers learning and transmitting a language. The dynamics of these chains serve as an approximation of the dynamics of generations of children acquiring and then transmitting language to future generations. 
-
-A secondary goal of the present work is to examine how psychological pressures influence the structure of the lexicon, independent of conceptual pressures.  Forms that are difficult to remember are unlikely to survive in the language  \cite{christiansen2008}, and there may be an additional communicative pressure for economy of expression \cite{zipf1949human}. Both of these pressures might lead to a preference for shorter words over longer, harder-to-produce words, biasing the ultimate structure of the lexicon towards shorter, more memorable words. 
-
-We used an iterated learning paradigm to study the dynamics of these two aspects of the lexicon: how  words change over the course of language evolution and how conceptual complexity interacts with these changes.\footnote{For ease of measurement, we operationalize word length in terms of number of orthographic characters. However, this measure is highly correlated with measures of length with greater psychological reality, such as phonemes and morphemes \cite{lewisstructure2014}.}As predicted, we find that forms in the lexicon converge to a more stable state and that a complexity bias emerges in the mappings between words and referents. We also find, contra our hypothesis, that the complexity bias is attenuated over time. A post-hoc analysis suggests that this change in the complexity bias over time is related to the degree of cross-generational change in the lexicon.
-
-
-\subsection{Method}
-
-Given existing evidence that a complexity bias is present in one-shot learning games \cite{lewisstructure2014}, our experiment was designed to test how conceptual pressures influenced the lexicon over the course of transmission. We asked speakers to learn a novel language that contained meanings of varying complexity and words of varying length. Critically, the language we asked participants to learn contained no systematic relationship between complexity and word length. After studying these mappings, participants were asked to recall them. The measure of interest was the relationship between the errors participants made and the complexity of the referent. If participants show a complexity bias, they should be more likely to add characters for more complex objects and remove characters for less complex objects. 
-
-This design characterized the first generation of our task. We then gave the labels that participants produced in the test phase of this first generation to a new set of speakers and asked them to complete the exact same task. We iterated 7 generations of this task in total.
-
-
-\subsubsection{Participants} 
-
-We recruited 350 participants from Amazon Mechanical Turk. Each generation was composed of 50 learners.
-
-\subsubsection{Stimuli}
-
-The referents were a set of 60 real objects that did not have common labels associated with them. These objects had been normed for their complexity in previous work \cite[Figure\ 1]{lewisstructure2014}. Norms were obtained by asking participants to indicate ``How complicated is this object?" using a slider scale. Norms were highly reliable across two samples of 60 participants. Based on these norms, we divided the objects into quintiles of 12 objects each. Each participant saw 2 objects from each quintile. 
-%\squeezeup
-
-\begin{figure}[b!]
-\begin{center}
-\includegraphics[width = 1\linewidth]{figs/realobjs.pdf}
-\end{center}
-\vspace{-.24em}
-\caption{Object stimuli used in the Experiment. The objects are sorted from least complex (top left) to most complex (bottom right) based on the complexity norms in Chapter 2. Each row corresponds to a quintile.}
-\label{fig:objs}
-\vspace{-1em}
-\end{figure}
-
-
-\begin{figure*}[t]
+\begin{figure}[t!]
 \begin{center}
 \includegraphics[scale = .3]{figs/Plot1.pdf}
 \end{center}
@@ -329,49 +350,16 @@ The referents were a set of 60 real objects that did not have common labels asso
 \caption{Changes in lexical features across generations. Error bars represent 95\% confidence intervals computed via non-parametric bootstrap across chains.}
 \label{fig:length}
 \vspace{-1em}
-\end{figure*}
-
-In the first generation, the words were composed of randomly concatenated syllables of 3, 5, 7, 9 or 11 characters in length. Words contained CV syllables and ended in a consonant (e.g., ``gan," ``panur," ``pugimog," ``tigadogog," and ``mogonokigan"). Each participant saw 2 words of each length. The assignment of word lengths to objects was arbitrary.
-
-Participants in Generation 2 were yoked with a participant from this first generation. This meant a participant in Generation 2 would see the exact same set of pictures as the yoked participant from Generation 1, but would learn the labels for those objects that the yoked participant had produced in the testing phase of Generation 1. Order of presentation in the training phase was randomized across generations. We iterated this procedure for a total of 7 generations.
-
-\subsubsection{Procedure} 
-
-
-Participants viewed a webpage that informed them they would be learning the names of 10 objects in an alien language. They were told they would see the names for each object four times and then their memory for the name of each object would be tested. Participants next viewed a screen displaying an object and the associated label below it. Participants pressed the space bar to advance to the next picture. Each picture-word pair was shown four times. 
-
-In the test phase, participants saw a screen with a picture and were asked to type the learned label in a text box below the picture. Memory for each of the 10 objects was tested.
-
-\subsection{Results}
-
-
-
-We conducted three analyses exploring how iterated learning influenced the structure of lexicons.\footnote{All code and data for the paper are available at \url{http://github.com/mllewis/iteratedRC}.} In Analysis 1, we examined the evolution of lexical forms. In Analysis  2, we considered the relationship between word length and referent complexity. This was the key analysis because it allowed us to test for a complexity bias in the lexicon and how this bias changed over time. Finally, in Analysis  3, we conducted a post-hoc analysis to understand the source of variability in cross-generational change in complexity bias across chains.
-
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width = .7\linewidth]{figs/lev.pdf}
-\end{center}
-\vspace{-.5em}
-\caption{Edit distance across generations, normalized by length of the longest word (guessed word vs.\ actual word). The top line shows the Levenshtein edit distance. The lines below reflect the components of this metric (substitutions, deletions, and insertions). Error bars represent 95\% confidence intervals computed via non-parametric bootstrap across chains. Number of edits decreased across generations.}
-\label{fig:lev}
-\vspace{-1em}
 \end{figure}
 
-\begin{figure*}[t]
-\begin{center}
-\includegraphics[scale = .4]{figs/complexity_bias.pdf}
-\end{center}
-\vspace{-.5em}
 
-\caption{Cumulative characters removed as a function of complexity across all 7 generations. Points correspond to the quintile means. Lines represent the best fitting linear model predicting word length from the complexity norm of the object. Negative slopes indicate a bias to recall longer labels for  more complex objects. Across generations, this bias decreased.}
-\label{fig:cbias}
-\vspace{-1em}
-\end{figure*}
+
+
 
 Across generations, 1\% of object labels were excluded because they contained more than one word or no word was produced. In these cases, the object was re-assigned a label from a different participant in that generation. The label was selected from a trial that had both the same initial word length and an object from the same quintile. 
 
 \subsubsection{Analysis 1: Word forms}
+
 
 
 Table \ref{tab:ex} presents a representative language chain. We analyzed four features of the lexical forms, averaging across each of the 50 chains at each generation: mean word length, number of unique words, transition probability, and accuracy. We also analyzed the degree of lexical change at each generation using the Levenshtein edit distance metric.
@@ -380,10 +368,20 @@ Across generations, mean word length decreased from an initial length of 7 chara
 
 
 
+
 Third, the mean orthographic transition probability of each word increased across generations ($r=.52, p<.0001$; Figure\ \ref{fig:length}c). Transition probabilities were calculated based on the set of words in the lexicon for a particular participant at a particular generation. This finding suggests that lexicons became more phonotactically structured across time. We also calculated the mean transition probability of each word using English transitions. Probabilities were estimated via orthographic bigrams from the Google Books corpus \cite{norvig}. In this analysis, the mean English transition probability of each word also increased across generations ($r=0.18$, $p <.001$), suggesting that the orthographic structure of individual words became somewhat more similar to English across generations. % vowel/consonants
 
 
 Fourth, we found that participants became more accurate in recall across generations ($r=.46, p<.0001$; Figure\ \ref{fig:length}d). To examine the relationship between accuracy and word forms, we constructed a logistic mixed-effects model predicting accuracy with word length, word uniqueness, and transition probability.\footnote{The model specification was as follows: \texttt{accuracy $\sim$ guessed label length~$\times$~transition probability~$\times$~ uniqueness + (guessed label length~\textbar~subject) +  (1~\textbar~chain)}.} Only word length was a reliable predictor of accuracy ($\beta=1.21$, $p <.0001$), suggesting that perhaps the increase in accuracy across generations was due to the shorter length of the words in these languages. %phonotactics is highly collinear with number of unique words so can't put in both predictors [f
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width = .6\linewidth]{figs/lev.pdf}
+\end{center}
+\caption{Edit distance across generations, normalized by length of the longest word (guessed word vs.\ actual word). The top line shows the Levenshtein edit distance. The lines below reflect the components of this metric (substitutions, deletions, and insertions). Error bars represent 95\% confidence intervals computed via non-parametric bootstrap across chains. Number of edits decreased across generations.}
+\label{fig:lev}
+\end{figure}
+
 
 
 %To examine the relationship between accuracy and features of the lexical forms, we constructed an additive linear model predicting accuracy with word length, number of unique words, and mean bigram probability. Both word length ($\beta=-0.25$, $p <.0001$) and number of unique words ($\beta=-0.28$, $p <.0001$) were reliable predictors of accuracy. This suggests that the increase in accuracy across generations was related to these changes in the features of the lexicon.
@@ -393,10 +391,6 @@ Finally, we analyzed word changes across generations using Levenshtein edit dist
 Taken together, this set of analyses points to a lexicon that is evolving to become more regular and consequently easier to learn.
 
 
-
-                         
-
-
 %consonant/vowel analysis?
 
 \subsubsection{Analysis 2: Complexity bias} 
@@ -404,6 +398,17 @@ Taken together, this set of analyses points to a lexicon that is evolving to bec
 In Analysis  2, we examined the relationship between changes in word length and the complexity of referents. If there is a complexity bias in the lexicon, participants should be more likely to produce longer labels for more complex referents. 
 
 We considered two metrics of word length: Label length in characters and cumulative characters removed (CCR). CCR is calculated by subtracting the word length at a particular generation from the input generation word length. Though slightly more complex, CCR provides a length metric that controls for variability in input word length; this control is important because words varied dramatically in their initial length due to random assignment in the initial generation. We calculated $p$-values based on an empirical distribution of $r$-values, obtained by sampling from random pairings of words and objects. This was done because changes in  language forms across generations change the distribution of possible $r$-values.
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[scale = .4]{figs/complexity_bias.pdf}
+\end{center}
+
+\caption{Cumulative characters removed as a function of complexity across all 7 generations. Points correspond to the quintile means. Lines represent the best fitting linear model predicting word length from the complexity norm of the object. Negative slopes indicate a bias to recall longer labels for  more complex objects. Across generations, this bias decreased.}
+\label{fig:cbias}
+\end{figure}
+
+
 
 Across generations, there was a reliable bias to map longer words to more complex referents across both measures of length (label length: $r=.05, p<.05$; CCR: $r=-.11, p<.0001$). Figure \ref{fig:cbias} shows CCR as a function of object complexity across generations. Qualitatively, the bias decreased across generations. However, there was high variability across chains both in the total complexity bias (label length: $SD = .27$), and in how this bias changed across generations (label length: $M = .004$; $SD = .69$).
 
@@ -444,11 +449,6 @@ Together, this set of analyses replicates prior work suggesting a complexity bia
 \subsubsection{Analysis  3: Relationship between change in word forms and change in complexity bias} 
 
 
-We  conducted a post-hoc exploration of the variability in the complexity bias across chains. For each chain, we quantified the complexity bias at each generation by calculating the correlation between metrics of length (label length and CCR) and the complexity norms. We then calculated the correlation between these coefficients and generation. This gave us a measure of the change in the complexity bias across generations. We considered how this change in complexity bias related to the degree of change in the forms of the lexicon. Two metrics of lexical change were analyzed: accuracy and Levenshtein edit distance. 
-
-Chains with greater cross-generational change in lexical forms tended to show an increase in complexity bias over time. Using raw label length as the length metric, there was a reliable correlation between change in complexity bias and accuracy ($r=0.29$, $p <.05$) and between  change in complexity bias  and normalized Levenshtein edit distance ($r=-0.32$, $p =.02$). This same pattern also held for the CCR length metric (accuracy: $r=-0.37$, $p <.01$; Levenshtein: $r=0.38$, $p <.01$; Figure\ \ref{fig:levcbias}).
-
-
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width = .8\linewidth]{figs/change_plot.pdf}
@@ -460,7 +460,14 @@ Chains with greater cross-generational change in lexical forms tended to show an
 \end{figure}
 
 
-%Nonetheless, there was great variability in the change in the complexity bias over time across each of the 50 chains. Analysis  3 attempted to account for this variability. We find a correlation between the accuracy of the chain and the change in the complexity bias over time. In particular, we find that less accurate chains tend to show a larger complexity bias.
+
+We  conducted a post-hoc exploration of the variability in the complexity bias across chains. For each chain, we quantified the complexity bias at each generation by calculating the correlation between metrics of length (label length and CCR) and the complexity norms. We then calculated the correlation between these coefficients and generation. This gave us a measure of the change in the complexity bias across generations. We considered how this change in complexity bias related to the degree of change in the forms of the lexicon. Two metrics of lexical change were analyzed: accuracy and Levenshtein edit distance. 
+
+Chains with greater cross-generational change in lexical forms tended to show an increase in complexity bias over time. Using raw label length as the length metric, there was a reliable correlation between change in complexity bias and accuracy ($r=0.29$, $p <.05$) and between  change in complexity bias  and normalized Levenshtein edit distance ($r=-0.32$, $p =.02$). This same pattern also held for the CCR length metric (accuracy: $r=-0.37$, $p <.01$; Levenshtein: $r=0.38$, $p <.01$; Figure\ \ref{fig:levcbias}).
+
+
+
+
 %%%% DISCUSSION %%%%%%
 \subsection{Discussion}
 
@@ -468,36 +475,89 @@ In three analyses, we examined change in the structure of lexicons across genera
 
 An unpredicted result was that the complexity bias does not strengthen across generations. Analysis  3 suggests that change in the complexity bias across generations is related to the degree of change in lexical forms in the chain: Chains with more change are more likely to show an increase in complexity bias over time. The underlying mechanism supporting this relationship is straight-forward: chains that make more errors have more opportunity to deviate from the random input mappings between words and referents. This direction of this correlation suggests that when chains do in fact deviate from these initials mappings, they do so in a systematic way. That is, they tend to deviate in a way that is more likely to map longer words onto more complex referents.
 
+%The iterated learning paradigm provides an opportunity to examine how in-the-moment psychological pressures influence the structure of a language in aggregate, over time. We examined two aspects of this structure: lexical forms and the mappings between words and objects. We hypothesized that different psychological pressures would influence each type of structure. In the case of lexical forms, we predicted there would be a bias to simplify the language into shorter, fewer forms. In the case of word-object mappings, we predicted a bias to map longer words onto more complex meanings \cite{lewisstructure2014}. The question of interest was how these psychological pressures influenced the structure of the lexicon across generations of transmission. 
 
-The iterated learning paradigm provides an opportunity to examine how in-the-moment psychological pressures influence the structure of a language in aggregate, over time. We examined two aspects of this structure: lexical forms and the mappings between words and objects. We hypothesized that different psychological pressures would influence each type of structure. In the case of lexical forms, we predicted there would be a bias to simplify the language into shorter, fewer forms. In the case word-object mappings, we predicted a bias to map longer words onto more complex meanings \cite{lewisstructure2014}. The question of interest was how these psychological pressures influenced the structure of the lexicon across generations of transmission. 
+%Our findings suggest that each of these pressures may have influenced the structure of the lexicon---and critically---that they interacted with each other. 
 
-Our findings suggest that each of these pressures may have influenced the structure of the lexicon---and critically---that they interacted with each other. We found both a bias to simplify the lexicon and a bias to map longer words onto more complex meanings. But these pressures appear to have pushed in opposite directions: The pressure to simplify the language leads to less variability in word length, and this reduced variability suppresses the complexity bias. 
+In sum, we found both a bias to simplify the lexicon and a bias to map longer words onto more complex meanings. But these pressures appear to have pushed in opposite directions: The pressure to simplify the language leads to less variability in word length, and this reduced variability suppresses the complexity bias. If these dynamics reflect actual language evolution, however, an important question still remains---why do we in fact see a complexity bias in natural language? That is, if there is a strong pressure towards simplicity, then why does a complexity bias emerge in natural language despite this pressure? 
 
-%We speculate, therefore, that a strong pressure to simplify the language may have lead to the attenuation of the complexity bias across time. In addition, simplifying the language may have lead to greater accuracy in transmitting the language, and this greater accuracy may have reduced the opportunity for a complexity bias to emerge. This interpretation is consistent with our post-hoc analysis demonstrating that less accurate chains showed a greater increase in complexity bias. 
+The Pragmatic Hypothesis suggests that this this discrepancy is due to the absence of an important feature in our task: communication with a second interlocutor. \citeA{zipf1949human} argued that the equilibrium that emerges in the lexicon is a product of both the speaker's desire to say less and the listener's desire for a more explicit, comprehensible message. Importantly, the common desire for efficiency creates opposing pressures among interlocutors. For a speaker, the optimal solution to communication is to have a lexicon that contains a single, short word that can be used to refer to all meanings. However, for a listener, the optimal solution is to have a lexicon that maps a unique word onto every possible meaning. 
 
-If these dynamics reflect actual language evolution, however, an important question still remains---why do we in fact see a complexity bias in natural language? That is, if there is a strong pressure towards simplicity, then why does a complexity bias emerge in natural language despite this pressure? 
+Thus, perhaps the absence of a listener pressure in our task may have lead our participants (``speakers'') to simplify the language. While our task was posed as a memory task, there was no penalty for failure to remember a form. In contrast, in a communicative task, the listener's failure to comprehend a label would have acted as an incentive for accurate reproduction, perhaps limiting the amount of compression the language would undergo.  In Study 4, we test this prediction.
 
-One possibility is that this discrepancy is due to the absence of an important feature in our task: communication with a second interlocutor. \citeA{zipf1949human} argued that the equilibrium that emerges in the lexicon is a product of both the speaker's desire to say less and the listener's desire for a more explicit, comprehensible message. Importantly, the common desire for efficiency creates opposing pressures among interlocutors. For a speaker, the optimal solution to communication is to have a lexicon that contains a single, short word that can be used to refer to all meanings. However, for a listener, the optimal solution is to have a lexicon that maps a unique word onto every possible meaning. 
+%But memory limitations may also play another role in the evolution of the lexicon: by introducing variation into the representations of individual words, speakers' memory constraints allow for change. In the absence of memory constraints, speakers might simply reproduce the language as is; thus, the interaction between cognitive and communicative pressures may function to {\it facilitate} the emergence of a complexity bias. 
 
-Thus, perhaps the absence of a listener pressure in our task may have lead our participants (``speakers'') to simplify the language. While our task was posed as a memory task, there was no penalty for failure to remember a form. In contrast, in a communicative task, the listener's failure to comprehend a label would have acted as an incentive for accurate reproduction, perhaps limiting the amount of compression the language would undergo. 
 
-% The claim is that the lexicon that emerges satisfies both of these constraints by having both variability in word forms and words that map to multiple meanings. 
-
-% A second possibility is that the languages we studied were small and straightforward enough to reach equilibrium in memory, and that we would not see such . 
-%  while vastly more diverse natural languages resist this pressure due to 
-
-But we speculate that memory limitations also play another role in the evolution of the lexicon: by introducing variation into the representations of individual words, speakers' memory constraints allow for change. In the absence of memory constraints, speakers might simply reproduce the language as is; thus, the interaction between cognitive and communicative pressures may function to {\it facilitate} the emergence of a complexity bias. 
 % However, memory limitations insert ``noise'' into the lexicon and thus create the opportunity forthe emergence and regularization of a complexity bias. 
-This synergistic relationship between memory and change is reminiscent of the ``less-is-more'' hypothesis and its descendants \cite{newport1990maturational,hudson-kam2005}, in which cognitive limitations are invoked as an important mechanism in language learning and language change. In the case of the complexity bias, these proposals make testable predictions that can be explored by extending the present paradigm into a communicative domain with varying demands on memory. In Study 4, we test this prediction.
 
-
-
+%This synergistic relationship between memory and change is reminiscent of the ``less-is-more'' hypothesis and its descendants \cite{newport1990maturational,hudson-kam2005}, in which cognitive limitations are invoked as an important mechanism in language learning and language change. In the case of the complexity bias, these proposals make testable predictions that can be explored by extending the present paradigm into a communicative domain with varying demands on memory.
 %%%%%%%%STUDY 4%%%%%%%%
-\section{Study 4: Complexity bias in a iterated, communicative memory task}
+\section{Study 4: Iterated learning in a communicative memory task}
 
-\section{Conclusion}
+%Why did the complexity bias decrease across generations? One possibility is that this discrepancy is due to the absence of an important feature in our task: communication with a second interlocutor. \citeA{horn1984} argued that the equilibrium that emerges in the lexicon is a product of both the speaker's desire to say less and the listener's desire for a more explicit, comprehensible message. Importantly, the common desire for efficiency creates opposing pressures among interlocutors. For a speaker, the optimal solution to communication is to have a lexicon that contains a single, short word that can be used to refer to all meanings. However, for a listener, the optimal solution is to have a lexicon that maps a unique word onto every possible meaning. 
+
+%Thus, perhaps the absence of a listener pressure in our task may have lead our participants (``speakers'') to simplify the language. While our task was posed as a memory task, there was no penalty for failure to remember a form. In contrast, in a communicative task, the listener's failure to comprehend a label would have acted as an incentive for accurate reproduction, perhaps limiting the amount of compression the language would undergo. 
+
+In Study 4, we try to simulate a listener by providing feedback in the testing phase. In the Communicative Feedback condition participants were told they are paired with another participant. We also ran a control No Feedback condition that is a near replication of Study 3. If the attenuation of the complexity bias in Study 3 is due to reduced listener demands, we expect that providing feedback will reduce this attenuation and perhaps lead to an increase in complexity bias over time. 
+
+\subsection{Method}
+
+\subsubsection{Participants}
+We recruited 500 participants from Amazon Mechanical Turk. Participants were randomly assigned to the No Feedback or Communicative Feedback conditions. We ran five generations in total with 50 participants at each generation for each condition.
+
+\subsubsection{Stimuli}
+The object and linguistic stimuli were identical to Study 3.
+
+\subsubsection{Procedure}
+The task was identical to Study 3, with the exception of the feedback. We also added a second block (where each block corresponds to a training and testing phase) so that there was greater opportunity to see effects of the feedback. In the Communicative Feedback condition, participants were told: ``In the next part of the experiment, you will be asked to work with a partner. Your partner also learned the labels for these 10 objects. Your partner will see a display of all 10 objects. Your job is to use the words you just learned to get your partner to select one of the objects." They then were  told they were paired with another participant, and shown their screen name. After entering their response in a chat box, they received feedback from the other participant. The feedback varied as a function of the Levenshtein edit distance of the word: If the word was highly different than the target word, the  dummy-partner responded with uncertainty (``I don't know what you mean"). However, if the word was sufficiently similar (above a threshold Levenshtein value), the dummy-partner responded affirmatively (``Got it'').
+
+\subsubsection{Results and Discussion}
+
+We conducted the same set of primary analyses as in Study 3: Change of word forms across generations (Analysis 1), and change in complexity bias across generations (Analysis 2). 
+
+\subsubsection{Analysis 1: Word forms}
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[scale = .5]{figs/chap4_4.pdf}
+\end{center}
+\caption{Changes in lexical features across generations. Error bars represent 95\% confidence intervals computed via non-parametric bootstrap across chains. }
+\label{fig:length_4}
+\end{figure}
+
+As in Study 3,  mean word length and number of unique words both decreased across generations (Figure\ \ref{fig:length_4}a and b). To test for an effect of condition, we fit a mixed effect linear model predicting word length with  condition and generation as fixed effects, and random intercepts and slopes by chain. There was a main effect of generation ($\beta=-.3$, $p <.001$). There was also an interaction with feedback condition ($\beta=-.06$, $p <.05$). This reflects the fact that word lengths decreased slower for the Communicative Feedback condition, relative to No Feedback. We then fit the same model but predicting number of unique words. There was a reliable effect of generation ($\beta=-.25$, $p <.001$), but no effect of condition.
+
+Finally, we also found that participants became more more accurate in recall across generations (Figure\ \ref{fig:length_4}c). Fitting the same model as above to predict accuracy, there was an effect of generation ($\beta=.04$, $p <.001$), and a reliable interaction between generation and condition  ($\beta=.04$, $p <.05$). This interaction reflects a small bias for participants in the Communicative Feedback condition to be more accurate in earlier generations. 
+
+Thus, in sum, we replicate our findings from Study 3 in the No Feedback condition: Word length and number of unique words decreased across generations, while accuracy increased. In the Communicative Feedback condition, word forms decreased in length slightly slower than in the No Feedback and were initially more accurate than in the No Feedback condition. However, for the most part, we find that feedback condition did not have a substantial influence on word forms.
+
+%However, we do not find much evidence that communicative feedback type influence the change of word forms. 
+%I have run the No Feedback and Communicative Feedback condition. The No Feedback condition replicates Study 3. In the Communicative Feedback condition, mean length appears to be somewhat longer,  but the complexity bias is smaller overall and does not increase across generations.
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[scale = .5]{figs/chap4_4bias.pdf}
+\end{center}
+\caption{Cumulative characters removed as a function of complexity across all 5 generations. Points correspond to the quintile means. Lines represent the best fitting linear model predicting word length from the complexity norm of the object. Negative slopes indicate a bias to recall longer labels for  more complex objects. Across generations, this bias decreased, but there was no evidence to support the prediction that communicative feedback strengthened the bias.}
+\label{fig:cbias4}
+\end{figure}
+
+
+\subsubsection{Analysis 2: Complexity bias}
+In Analysis 2, we examined the key hypothesis: The magnitude of the complexity bias should be affected by feedback condition. As in Study 3, we analyzed the cumulative number of characters removed as our measure of length. For each condition, we measured the correlation between the complexity measure of the word. Collapsing across conditions, the magnitude of the bias was larger in the No Feedback condition ($r = -0.08$), relative to the Communicative Feedback condition  ($r = -0.03$).  Figure\ \ref{fig:cbias4} shows the complexity bias across generations for each of the two conditions. Qualitatively, there is no evidence to suggest that the bias increased in the Communicative Feedback condition, as predicted by the Pragmatic Hypothesis. If anything, it appears to decrease. 
+
+
+
+\subsection{Discussion}
+The Pragmatic Hypothesis provided one possible explanation for the absence of a strengthening of the complexity bias in Study 3. In Study 4, we tested this prediction by introducing a (fake) interlocutor to give feedback to participants. However, there is no evidence to suggest that this pressure functions to  increase the bias over time.
+
+It is possible that this null effect is due to unusual setup of our task, such that participants did not believe the ``communicative" cover story.  A stronger test of the Pragmatic Hypothesis would therefore be to conduct the same experiment in the lab in a more realistic communicative context. Alternatively, this null effect could be because communicative pressures are not the critical pressure in decreasing word lengths in this task. The current experiment cannot distinguish between these two possibilities, but it nevertheless provides some evidence against the Pragmatic Hypothesis.
+
+\section{General Discussion }
+In the present chapter we surveyed evidence relevant to four possible hypotheses about the origins of a complexity bias in natural language: The Efficient Naming Hypothesis, the Learning Hypothesis, the Memory Hypothesis, and the Pragmatic Hypothesis.
 compare all rs across all samples (google, swadesh, etc.
 effect sizes
+
+An open question from this work is where an in-the-moment bias might originate from. Parsimony.
 
 talk about in the moment bias  lexical bias vs. (e.g. overhyopthesis)
 
