@@ -3,14 +3,15 @@
 \chapter{What is conceptual complexity?}
 \label{chapter:complexity}
 
-The studies in Chapter 2 provide evidence for a regularity between word length and a dimension of word meaning, complexity. In these previous studies, we operationalized the notion of complexity by manipulating the visual complexity of objects in terms of number of component parts. We found that the number of parts  positively correlated with participants' study time in a memory task, providing additional evidence that the stimulus complexity was psychologically relevant. Furthermore, we found that the notion of conceptual complexity extended beyond the visual domain to abstract word meanings in natural language. This finding points to a theory of conceptual complexity that is more general than simply the number of visual parts associated with an object.  Notably, however, this work leaves open the important question of what exactly this theory is---what makes one meaning more conceptually complex than another? Here we try to more directly address this question. 
+The studies in Chapter 2 provide evidence for a regularity between word length and a dimension of word meaning, complexity. In these previous studies, we operationalized the notion of complexity by manipulating the visual complexity of objects in terms of number of component parts. We found that the number of parts  positively correlated with participants' study time in a memory task, providing additional evidence that object complexity was psychologically relevant. Furthermore, we found that the notion of conceptual complexity extended beyond the visual domain to abstract word meanings in natural language. This finding points to a theory of conceptual complexity that is more general than simply the number of visual parts associated with an object.  Notably, however, this work leaves open the important question of what exactly this theory is---what makes one meaning more conceptually complex than another? Here we try to more directly address this question. 
 
 To formalize the notion of complexity, we adopt an information theoretic approach \cite{shannon1948}.\footnote{Note that our discussion of Information Theory here differs from that in Chapter 2 in terms of the domain that the theory is being applied to. In Chapter 2, we appeal to Information Theory to understand the length of words in a communication system. In this chapter, we appeal to the same theory but apply it to  concepts. } The central idea of Information Theory is that, within a communication channel, each meaning $m$ is communicated with probability $p$, such that the amount information conveyed by each occurrence of $m$ is $-log(p)$. Critically, if it is assumed that the overall length of the code in the communication channel is minimized, then meanings should be assigned to codes in a particular way: Less probable meanings should be assigned to longer codes. By making these assumptions, we establish a fundamental link between the amount of information in a code, its probability of occurrence and its length. In our work here, we appeal to this framework to derive a metric of complexity: More complex codes are longer (i.e.\ less compressible), less probable, and contain more information.\footnote{This relationship is reflected in the idea of minimum description length proposed by Kolmogorov and others: In a maximally compressed code, more complex codes are longer.}
 
-Information Theory thus provides a  starting point for evaluating the complexity of a concept by providing a quantitative measure.
-The central idea is that a concept with more primitives is more conceptual complex. This proposal is inspired by work done on object respresntations.% Alvarez
+Information Theory thus provides a  starting point for evaluating the complexity of a concept by providing a quantitative measure. This proposal is inspired by work on the representation of objects in visual short term memory. To quantify the amount of information in a visual stimulus, \citeA{alvarez2004capacity} measured how long participants took to identify the presence of a visual stimulus among an array of  non-targets. They then used a change detection task to determine the threshold for the number of objects that participants could correctly identify a change in over a short interval of time. Critically, they found that the search rate of a visual stimulus was positively correlated with the memory capacity for that stimulus in the change detection task.  This work suggests that the capacity of visual working memory is in part determined by the amount of information contained within the visual stimuli: Objects that contain more information, as indexed by search rate, are more complex and thus are less compressible in memory. If we apply this same approach to concepts, the central idea is that a concept will be more complex if it contains more information. 
 
-The theory of concepts posited here---that concepts are defined by primitives---is closely related to the Classical Theory of concepts in the philosophical and psychological literature  \cite{laurence1999concepts}.   A concept in the Classical Theory is defined by a rule, or definition, composed of a structured set of conceptual primitives. These definitions are typically considered deterministic of category membership, but more recent work has considered this theory in a probabilistic framework \cite{goodman2008rational}. To understand this view, consider the geon stimuli from Chapter 2:  If we assume that a ``unit" is equivalent to a geon,  then an object composed of a sphere and cone has a conceptual complexity of two, and an object composed of only a sphere, has a conceptual complexity of one. This is the representational framework that is most similar to the approach in Chapter 2.
+%We define a concept as containing more information if it is defined by more primitives. 
+
+Notably, this proposal is closely related to the Classical Theory of concepts in the philosophical and psychological literatures  \cite{laurence1999concepts}.  A concept in the Classical Theory is defined by a rule, or definition, composed of a structured set of conceptual primitives. These definitions are typically considered deterministic of category membership, but more recent work has considered this theory in a probabilistic framework \cite{goodman2008rational}. To understand this view, consider the geon stimuli from Chapter 2:  If we assume that a primitive ``unit" is equivalent to a geon,  then an object composed of a sphere and cone has a conceptual complexity of two, and an object composed of only a sphere, has a conceptual complexity of one. 
 
 The Classical Theory has been productively instantiated with Boolean concepts and first-order logic \cite{shepard1961learning,feldman2000minimization,goodman2008rational}.  In this  framework, there are a set of primitive concepts, or predicates, that are represented by binary features, and a syntax for combining them given by first order logic.  For example, consider the concept if \textsc{mother}: If \textsc{female} and \textsc{has\_child} were primitives in the representational language, then  \textsc{mother} would denote the set of people where both primitives were true. 
 
@@ -19,31 +20,9 @@ The information theoretic measure of complexity falls straight-forwardly out of 
 %In the case of concepts, it is not a priori obvious what representational model the cognitive system uses to compress information.  
 %An important issue for this theory of concepts is identifying a general set of conceptual primitives.
 
-The central challenge, however, in defining conceptual complexity in information theoretic terms is to define the model, or primitives, over which compression occurs. This is because the metric of complexity depends on the representational model. In other words, what counts as ``one unit" of code in depends on the representational model that is assumed. This representational agnosticism implies that a meaning that is relatively more complex in one representational framework may be relatively less complex in another, or that  complexity in one representational framework may be entirely unrelated to conceptual complexity.
+The central challenge, however, in defining conceptual complexity in information theoretic terms is to define the model, or primitives, over which compression occurs. This is because the metric of complexity depends on the representational model. In other words, what counts as ``one unit" of code depends on the representational model that is assumed. The representational agnosticism of Information Theory implies that a meaning that is relatively more complex in one representational model may be relatively less complex in another, or that  complexity in one representational model may be entirely unrelated to conceptual complexity.
 
-Although defining the model of compression might rank among the deepest challenges for cognitive science, some work has attempted this task. A body of research has sought to understand the innate conceptual primitives in young children (``core knowledge;" Kinzler \& Spelke, 2007). \nocite{kinzler2007core} The proposed set of concepts in this work, however, is restricted to those present only  in early development (e.g., ``agent"), and is therefore not suitable for the broad scope of our current project.  Wierzbicka and colleagues (1996) have also  sought  to identify conceptual primitives, but with a more general focus.  \nocite{wierzbicka1996semantics} This work compares lexical systems across languages  to identify common primitives. The hypothesis is that there exists universal and innate semantic primitives which are the building blocks of meaning in human language. Under this view, all meanings can be derived from a set of numerable semantic primitives and a syntax for combining them.
- 
-A related issue to the nature of the representational model is the ontological status of the units over which compression occurs. In particular, whether compression occurs at the type or token level \cite{peirce}. The type level describes an abstract representation, and is most consistent with the ``rule" or ``definitional" nature of the concepts posited by the Classical Theory. In contrast, the token level of representation concerns that which is directly observable; instances of concepts in the real world .  The token level is most closely aligned with the Statistical View of concepts, including Exemplar and Prototype Theories in cognitive science  \cite{laurence1999concepts}. Under this view, concepts are represented in terms of actual exemplars observed, either by directly storing exemplars or by computing summary statistics over exemplars. If the cognitive system compresses information at the level of tokens, we might expect, for example, a concept with more observed exemplars to be more conceptually complex. 
-
-In order to understand the nature of conceptual complexity, in this chapter we explore a number of different hypotheses about the model over which the cognitive system might compress meaning. Broadly, in Studies 1-5 we consider a compression model over the level of types, and in Studies 6 and 7 we consider a compression model over tokens (see Table~\ref{tab:complexity_pred_summary_table} for a summary of the studies). In Studies 1-4, we explore whether the definition length of a concept  is related to the length of the label denoting that concept. In these studies, we assume that words denote conceptual units, such that concepts associated with longer linguistic definitions are  more complex. In Study 5, we ask whether whether the representational model is related to several different culturally relevant facts associated with a concept. Finally, in Studies 6 and 7, we ask whether the frequency and variability of the exemplars of a concept are related to conceptual complexity.  Across all seven studies, we find positive evidence only in support of the hypothesis that number of conceptual primitives, as measured by words, is related to conceptual complexity.
-
-
-%In this chapter, we consider two broad hypotheses about the ontol
-
-%In Studies 1-4, we assume that words are either proxies for or are the primitives of the representational model. In Studies 
-%Motivated by the Classical View of concepts,
-
- %While each of these views is consistent with a wide range of theories, we consider each view here in its most general form. We then apply Information Theory to each view of concepts and ask what would make one concept more complex than another, assuming the representational framework of that theory. Briefly, for the Classical View, a more complex concept is one with a longer description length. 
-
- 
-
-%type vs. token
-%Representative complexity -for what purpose over which model over which compression occurs
-%experience
-%Hamming
-%We see our goal as not  to distinguish between these  views, nor even that they are incompatible with each other \cite<e.g.,>{murphy2015there,briscoe2011conceptual}. Rather, we consider each of these views as paradigms, in a Kuhnian sense, and ask whether these frameworks can inform our understanding of conceptual complexity when considered in the context of Information Theory. Our approach will be to observe variability in the complexity of meanings as defined within a particular theory of concepts, and ask whether this variability is related to the length of the word that meaning is mapped to. Evidence that a manipulation of conceptual complexity is related to word length would shed light on the underlying construct of conceptual complexity.  
-
-%In what follows, we review previous work related to each broad view of concepts---Classical and Statistical---followed by  a series of empirical studies testing  predictions of each view. In total, we conduct seven studies exploring various predictions these theories (see Table~\ref{tab:complexity_pred_summary_table} for a summary of our studies). We conclude with a brief summary of our results. 
+Although defining the representational model of the cognitive system might rank among the deepest challenges for cognitive science, some work has attempted this task. A body of research has sought to understand the innate conceptual primitives in young children (``core knowledge;" Kinzler \& Spelke, 2007). \nocite{kinzler2007core} The proposed set of concepts in this work, however, is restricted to those present only  in early development (e.g., ``agent"), and is therefore not suitable for the broad scope of our current project.  Wierzbicka and colleagues (1996) have also  sought  to identify conceptual primitives, but with a more general focus.  \nocite{wierzbicka1996semantics} This work compares lexical systems across languages  to identify common primitives. The hypothesis is that there exists universal and innate semantic primitives which are the building blocks of meaning in human language. Under this view, all meanings can be derived from a set of numerable semantic primitives and a syntax for combining them.
 
 \begin{table}[t]
 \footnotesize
@@ -68,6 +47,30 @@ In order to understand the nature of conceptual complexity, in this chapter we e
 
 
 
+ 
+A related issue to the nature of the representational model is the ontological status of the units over which compression occurs. In particular, whether compression occurs at the type or token level \cite{peirce}. The type level describes an abstract representation, and is most consistent with the ``rule" or ``definitional" nature of the concepts posited by the Classical Theory. In contrast, the token level of representation concerns that which is directly observable; instances of concepts in the real world.  The token level is most closely aligned with the Statistical View of concepts, particularly Exemplar and Prototype Theories in cognitive science  \cite{laurence1999concepts}. Under this view, concepts are represented in terms of actual exemplars observed, either by directly storing exemplars or by computing summary statistics over exemplars. If the cognitive system compresses information at the level of tokens, we might expect, for example, a concept with more observed exemplars to be more conceptually complex. 
+
+In order to understand the nature of conceptual complexity, in this chapter we explore a number of different hypotheses about the model over which the cognitive system might compress meaning. Broadly, in Studies 1-5 we consider a compression model over the level of types, and in Studies 6 and 7 we consider a compression model over the level of tokens (see Table~\ref{tab:complexity_pred_summary_table} for a summary of the studies). In Studies 1-4, we explore whether the definition length of a concept  is related to the length of the label denoting that concept. In these studies, we assume that words denote conceptual units, such that concepts associated with longer linguistic definitions are  more complex. In Study 5, we ask whether whether the representational model is related to several different culturally relevant facts associated with a concept. Finally, in Studies 6 and 7, we ask whether the frequency and variability of the exemplars of a concept are related to conceptual complexity.  Across all seven studies, we find positive evidence only in support of the hypothesis that number of conceptual primitives, measured linguistically, is related to conceptual complexity.
+
+
+%In this chapter, we consider two broad hypotheses about the ontol
+
+%In Studies 1-4, we assume that words are either proxies for or are the primitives of the representational model. In Studies 
+%Motivated by the Classical View of concepts,
+
+ %While each of these views is consistent with a wide range of theories, we consider each view here in its most general form. We then apply Information Theory to each view of concepts and ask what would make one concept more complex than another, assuming the representational framework of that theory. Briefly, for the Classical View, a more complex concept is one with a longer description length. 
+
+ 
+
+%type vs. token
+%Representative complexity -for what purpose over which model over which compression occurs
+%experience
+%Hamming
+%We see our goal as not  to distinguish between these  views, nor even that they are incompatible with each other \cite<e.g.,>{murphy2015there,briscoe2011conceptual}. Rather, we consider each of these views as paradigms, in a Kuhnian sense, and ask whether these frameworks can inform our understanding of conceptual complexity when considered in the context of Information Theory. Our approach will be to observe variability in the complexity of meanings as defined within a particular theory of concepts, and ask whether this variability is related to the length of the word that meaning is mapped to. Evidence that a manipulation of conceptual complexity is related to word length would shed light on the underlying construct of conceptual complexity.  
+
+%In what follows, we review previous work related to each broad view of concepts---Classical and Statistical---followed by  a series of empirical studies testing  predictions of each view. In total, we conduct seven studies exploring various predictions these theories (see Table~\ref{tab:complexity_pred_summary_table} for a summary of our studies). We conclude with a brief summary of our results. 
+
+
 
 
 %``length of the shortest Boolean formula logically equivalent to the concept"
@@ -84,7 +87,7 @@ In order to understand the nature of conceptual complexity, in this chapter we e
 %If, however, we assume a different representational framework, we might code this same object with a single conceptual primitive, ``ice cream cone."
 
 \section{Experiment 1: Descriptions of objects}
-In Chapter 2, we presented participants with novel, real objects and measured their complexity through explicit judgements (Exp.\ 4; pg.\ \pageref{ch2-4}) and study time (Exp.\ 8b; pg.\ \pageref{ch2-8b}). Both of these measures showed variability, suggesting that these objects differed in their complexity.  In Experiment 1, we consider this result in the context of an information theoretic view of concepts. In particular, if the cognitive system's model of representation is related to words, then a more complex concept should be one with more words associated with its meaning. We reasoned that, if true, these primitives should be reflected in participants linguistic descriptions of the objects. More specifically, we predicted that objects rated as more complex and studied longer in Exp.\ 4 and 8b should also be described with longer descriptions. We test this prediction here by asking participants to produce written linguistic description of the objects.
+In Chapter 2, we presented participants with novel, real objects and measured their complexity through explicit judgements (Exp.\ 4; pg.\ \pageref{ch2-4}) and study time (Exp.\ 8b; pg.\ \pageref{ch2-8b}). Both of these measures showed variability, suggesting that these objects differed in their complexity.  In Experiment 1, we consider this result in the context of an information theoretic view of concepts. In particular, if the cognitive system's model of representation is related to words, then a more complex concept should be one with more words associated with its meaning. In this experiment, we reasoned that, if true, these primitives should be reflected in participants linguistic descriptions of the objects. More specifically, we predicted that objects rated as more complex and studied longer in Exp.\ 4 and 8b should also be described with longer descriptions. We test this prediction here by asking participants to produce written linguistic description of the objects.
 
 \subsection{Methods}
 \subsubsection{Participants} 
@@ -92,7 +95,7 @@ In this and all subsequent experiments, participants were recruited on Amazon Me
 \subsubsection{Stimuli}  
 We used the same set of 60 novel real objects as in Chapter 2 (Fig. \ref{fig:realobjs}; pg.\ \pageref{fig:realobjs}).
 \subsubsection{Participants} 
-On each trial, we presented a single object and following instructions:  ``Look at the object below. Imagine you just received this object as a gift. Describe what the object looks like to a friend." Participants then entered their description in a text box below the object.
+On each trial, we presented a single object and the following instructions:  ``Look at the object below. Imagine you just received this object as a gift. Describe what the object looks like to a friend." Participants then entered their description in a text box below the object.
 
 Each participant described 10 objects in total. Five objects were from the top quantile (high complexity) and 5 objects were from the bottom quantile (low complexity). Order of objects was randomized across trials.
 
@@ -146,9 +149,9 @@ To test this question we fit a  linear mixed-effect model predicting log number 
 This result suggests that linguistic representations, in particular, words, may be related to the the coding model of the cognitive system for conceptual complexity.
 
 \section{Experiment 2a: Definitions of words}
-Experiment 1 suggested objects that appear visually more complex are described with longer descriptions. The studies in Chapter 2, however, suggest that the construct of conceptual complexity extends beyond visual complexity to abstract word meanings. This predicts that the length of a dictionary definition of a word should be correlated with the conceptual complexity of its meaning. In light of the complexity bias observed in Chapter 2, we also predict that words with more complex definitions should be longer and have definitions that are rated as more complex. In Experiment 2 we tested these predictions by presenting participants with the definition of low frequency English words  and asking them to rate the conceptual complexity of the definition.
+Experiment 1 suggested objects that appear visually more complex are described with longer descriptions. The studies in Chapter 2, however, suggest that the construct of conceptual complexity extends beyond visual complexity to abstract word meanings. This predicts that the length of a dictionary definition of a word should be correlated with the conceptual complexity of its meaning. In light of the complexity bias observed in Chapter 2, we also predict that words with more complex definitions should be longer and have definitions that are rated as more complex. In Experiment 2, we tested these predictions by presenting participants with the definition of low frequency English words  and asking them to rate the conceptual complexity of the definition.
 
-We selected low frequency words for several reasons. First, because participants were unlikely to know the word associated with the definition, knowledge of a word's length was unlikely to affect the complexity judgement. Second, because the words were uniformly low frequency, this reduced the possibility that differences in word length were due to frequency, rather than conceptual complexity. Finally, because participants were unlikely to know the words, we could conduct a follow-up experiment (2b) probing judgements about the length of a meaning's word, without knowledge of the English word interfering with this judgement.
+We selected low frequency words for several reasons. First, because participants were unlikely to know the word associated with the definition, knowledge of a word's length was unlikely to affect the complexity judgement. Second, because the words were uniformly low frequency, this reduced the possibility that differences in word length were due to frequency, rather than conceptual complexity. Finally, because participants were unlikely to know the words, we could conduct a follow-up experiment (Exp.\ 2b) probing judgements about the length of a meaning's word, without knowledge of the English word interfering with this judgement.
 
 \subsection{Methods}
 
@@ -187,18 +190,18 @@ For each definition, we then asked ``How complex is this definition?,'' and part
 \subsection{Results and Discussion}
 The central prediction is that definitions with more primitives in the definition, operationalized as the length of the definition, should be rated as conceptually more complex. To test this prediction, we fit a linear mixed-effect model predicting complexity ratings with log number of words in the definition as a fixed effect. The random effect structure included by-participant intercepts and by-trial slopes. As predicted, there was a strong relationship between complexity ratings and log number of words ($\beta=1.50$, $t =27.94$). The same pattern held for log number of characters.
 
-A secondary prediction is that there should be a relationship between the length of the definition and the length of the word: If languages encode the conceptual complexity of a word's meaning in the length of the word, longer words should be associated with longer definitions. This prediction was not supported ($r=.05$, $p =.59$). Finally, we should also expect that  longer words should be associated with definitions rated as more complex. We fit the same mixed-effect model as above to test this prediction, except with log number of characters in the word as a fixed effect. There was a significant relationship between word length and rating judgements ($\beta=.52$, $t =2.86$), suggesting more complex definitions area associated with longer words. However, in a model with both word length and definition length as fixed effects, word length was no longer a reliable predictor of complexity ratings ($\beta=.18$, $t =1.19$).
+A secondary prediction is that there should be a relationship between the length of the definition and the length of the word: If languages encode the conceptual complexity of a word's meaning in the length of the word, longer words should be associated with longer definitions. This prediction was not supported ($r=.05$, $p =.59$). Finally, we should also expect that  longer words should be associated with definitions rated as more complex. We fit the same mixed-effect model as above to test this prediction, except with log number of characters in the word as a fixed effect. There was a significant relationship between word length and rating judgements ($\beta=.52$, $t =2.86$), suggesting more complex definitions are associated with longer words. However, in a model with both word length and definition length as fixed effects, word length was no longer a reliable predictor of complexity ratings ($\beta=.18$, $t =1.19$).
 
 In sum, we find a strong relationship between definition length and conceptual ratings: Longer definitions, with more primitives, are rated as more complex. We do not, however, find the predicted relationship between the conceptual complexity of the definition and word length, as would be predicted by the studies in Chapter 1.  One possible explanation for this null finding is that participants' complexity ratings were driven by the linguistic complexity of the definition, rather than its conceptual complexity. In other words, participants may have  rated longer definitions as more complex {\it because} they were longer, not because they were more conceptually complex. The current design does not allow us to distinguish these two possibilities.
 
 \section{Experiment 2b: Definition mapping}
-If definition length is related to conceptual complexity and participants have a complexity bias, we predict that participants should be biased to map more complex definitions on to longer words. In Experiment 2b, we test this prediction in an experiment analogous to the word mapping experiments in Chapter 2. Participants were presented with a meaning---a definition---and asked to guess the translation of the meaning in an alien language from two possible alternatives, one long and one short. 
+If definition length is related to conceptual complexity and participants have a complexity bias, we predict that participants should be biased to map more complex definitions on to longer words. In Experiment 2b, we test this prediction in an experiment analogous to the word mapping experiments in Chapter 2. Participants were presented with a meaning---a definition---and asked to guess the translation of the meaning in an alien language from two possible alternative words, one long and one short. 
 
 \subsection{Methods}
 \subsubsection{Participants}
 200 participants completed the experiment.
 \subsubsection{Stimuli}
-We used the normed definitions from Experiment 2a. The short novel words contained one syllable, and the long novel words contained three syllables. There were 10 short and 10 long novel words presented in random order. \\
+We used the normed definitions from Experiment 2a. The short novel words contained one syllable, and the long novel words contained three syllables. There were 10 short and 10 long novel words presented in random order. 
 \subsubsection{Procedure}
 Participants were first presented with the following instructions:
 \begin{quote}
@@ -212,7 +215,7 @@ Consistent with previous evidence, we found a complexity bias in participants ma
 While this result is consistent with a complexity bias, as well as the pattern of complexity predicted by a linguistic model of representation for compression, it is difficult to make strong causal inferences from these data. The fact that definition length accounts for more variance in bets than complexity norms suggests that it may be linguistic complexity, rather than conceptual complexity that is driving this bias. This result may simply reflect participants bias to map long definitions to long words. While a positive finding, this result does not speak to the claim directly that it is {\it conceptual} complexity per se that is related to definition length and the bias in word length. In Study 3, we try to address this issue more directly. 
 
 \section{Study 3: Feature norms}
-Study 3 provides another test of the hypothesis the linguistic model of compression. In this study, however, we measure conceptual primitives through feature norms. This has the advantage of reduce the amount of ``noise" in our measure by elimintate words that appear in definitions that are not core to the meaning (e.g. prepositions, articles, etc.). Feature norms are collected by presenting participants with the name of a concept (e.g., ``moose") and asking them to produce as many features of the concept as possible (e.g., ``has four legs," ``has antlers"). If we assume that the features participants generate correspond to conceptual primitives in the definition of that concept, then information theory predicts that concepts with more  features should be more conceptually complex. If true, we should also expect concepts associated with more features to have longer labels. We test this prediction using a set of previously-collected feature norms.
+Study 3 provides another test of the hypothesis the linguistic model of compression. In this study, however, we measure conceptual primitives through feature norms. This has the advantage of reducing the amount of ``noise" in our measure of primitives by eliminating words that appear in definitions that are not core to the meaning (e.g. prepositions, articles, etc.). Feature norms are collected by presenting participants with the name of a concept (e.g., ``moose") and asking them to produce as many features of the concept as possible (e.g., ``has four legs," ``has antlers"). If we assume that the features participants generate correspond to conceptual primitives in the definition of that concept, then Information Theory predicts that concepts with more  features should be more conceptually complex. If true, we should also expect concepts associated with more features to have longer labels. We test this prediction using a set of previously-collected feature norms.
 
   \begin{figure}[t!]
  \begin{center}
@@ -300,7 +303,7 @@ Finally, we examined the relationship between the conceptual complexity norms fr
 
 
 
-Thus, across four studies, we find support for the notion that the conceptual complexity may be relative to the number of conceptual primitives in concept.   Nevertheless, the interpretation of these effects is limited by a number of factors. One issue is  that we  may not have  adequately measured the ``primitives" of conceptual complexity. In all of our studies, we assume that language can be used as a proxy for conceptual primitives. If this is not true, or linguistic representations are a poor proxy for conceptual primitives, then this would limit the interpretability of our findings. Indeed, identifying  conceptual primitives is one of the largest challenges for this view. In addition, this work here does not provide an account of how conceptual complexity might change with experience (e.g. why ``telephone" might become ``phone").  In Study 5, we examine another possible representational model: culturally-relevant facts associated with the concepts. 
+Thus, across four studies, we find support for the notion that the conceptual complexity may be related to the number of conceptual primitives in concept.   Nevertheless, the interpretation of these effects is limited by a number of factors. One issue is  that we  may not have  adequately measured the ``primitives" of conceptual complexity. In all of our studies, we assume that language can be used as a proxy for conceptual primitives. If this is not true, or linguistic representations are a poor proxy for conceptual primitives, then this would limit the interpretability of our findings. Indeed, identifying  conceptual primitives is one of the largest challenges for this view. In addition, this work here does not provide an account of how conceptual complexity might change with experience (e.g. why ``telephone" might become ``phone").  In Study 5, we examine another possible representational model: culturally-relevant facts associated with the concepts. 
 
 
 %\section{Conceptual complexity under the Statistical View}
@@ -332,9 +335,16 @@ Thus, across four studies, we find support for the notion that the conceptual co
 %we  test the hypothesis that the number of observed exemplars is related to conceptual complexity. However, in the present experiment, we explore the possibility that perhaps raw number of times an exemplar is observed is not the psychologically relevant dimension of frequency. We instead ask whether {\it conceptual} frequency, or markedness, is
 
 \section{Experiment 5: Facts}
-While the previous experiments assume that conceptual primitives are related to the number of words in a concept's definition, here we ask whether culturally relevant facts associated with a concept might influence its conceptual complexity. In Experiment 5,  we teach participants facts about novel objects, and then asked them to map those objects to short or long words. We selected four categories of facts  that were intuitive candidates for culturally significant units of compression: Monetary cost, frequency of use, frequency of discussion, and frequency of appearance on Facebook.
+While the previous experiments assume that conceptual primitives are related to the number of words in a concept's definition, here we ask whether culturally relevant facts associated with a concept might influence its conceptual complexity. In Experiment 5,  we teach participants facts about novel objects, and then ask them to map those objects to short or long words. We selected four categories of facts  that were intuitive candidates for culturally significant units of compression: Monetary cost, frequency of use, frequency of discussion, and frequency of appearance on Facebook.
 
 \subsection{Method}
+
+
+
+\subsubsection{Participants}
+120 participants completed this experiment. 
+\subsubsection{Stimuli}
+All participants were presented with the same eight facts, shown in Table \ref{tab:facts}. Objects were again a sample of the novel, real objects used in Chapter 2, Expts.\ 4-6.  The linguistic stimuli were novel words composed of either 2 (e.g., ``tupa," ``gabu," ``fepo")  or 4  (e.g., ``tupabugorn," ``gaburatum," ``fepolopus")  syllables.
 
 \begin{table}[t!]
 \centering
@@ -353,11 +363,6 @@ While the previous experiments assume that conceptual primitives are related to 
 \caption{The eight facts used in Experiment 5. For each of the four categories, there was a low and high frequency alternate (shown in  brackets).}
 \label{tab:facts}
 \end{table}
-
-\subsubsection{Participants}
-120 participants completed this experiment. 
-\subsubsection{Stimuli}
-All participants were presented with the same eight facts, shown in Table \ref{tab:facts}. Objects were again a sample of the novel, real objects used in Chapter 2, Expts.\ 4-6.  The linguistic stimuli were novel words composed of either 2 (e.g., ``tupa," ``gabu," ``fepo")  or 4  (e.g., ``tupabugorn," ``gaburatum," ``fepolopus")  syllables.
 
 \subsubsection{Procedure}
 Participants were presented with the following instructions:
@@ -409,12 +414,12 @@ After this training phase, participants completed a forced choice mapping task, 
   \begin{figure}[t!]
  \begin{center}
   \includegraphics[width=6in]{figs/freq_plots.pdf}
-  \caption{\label{fig:freq_plots} Proportion participants selecting the low frequency object as a function of language condition, in Exp.\ 5a (left) and Exp.\ 5b (right). Error bars are bootstrapped 95\% confidence intervals.}
+  \caption{\label{fig:freq_plots} Proportion participants selecting the low frequency object as a function of language condition, in Exp.\ 6a (left) and Exp.\ 6b (right). Error bars are bootstrapped 95\% confidence intervals.}
  \end{center}
 \end{figure}
 
 \section{Experiment 6b: Sequential frequency}
-Given the null finding in Experiment 5a, we next explore whether the timing of the presentation of exemplars affects complexity. Previous work has shown that participants may induce different concepts depending on whether or not exemplars are presented simultaneously, as in Exp.\ 6a,  or sequentially \cite<e.g.>{spencer2011}. In Experiment 6b, we present exemplars sequentially such that only one exemplar is visible at any given time. 
+Given the null finding in Experiment 6a, we next explore whether the timing of the presentation of exemplars affects complexity. Previous work has shown that participants may induce different concepts depending on whether or not exemplars are presented simultaneously, as in Experiment 6a,  or sequentially \cite<e.g.>{spencer2011}. In Experiment 6b, we present exemplars sequentially such that only one exemplar is visible at any given time. 
 
 \subsection{Method}
 \subsubsection{Participants}
@@ -430,13 +435,21 @@ Selections between the two conditions did not differ (${\chi}^2$$(1) = 0.01$, $p
 One possible reason for this null finding might be that we were not successful in manipulating the frequency of tokens in the present experiments. Instead, participants may have perceived our manipulation as repeated instances of the same token. Under this interpretation, our manipulation could be seen as varying the familiarity with a particular token. We tried to force the token interpretation of our objects through the cover story, but this was undermined by the fact that all of the objects were identical. These experiments are thus  suggestive that frequency of tokens is not the coding model for complexity, but a stronger test of this hypothesis would be a manipulation that varied exemplars within a concept. 
 
 \section{Experiment 7: Exemplar variability}
-In the final experiment, we forced the token interpretation of our stimuli by presenting participants with a varying exemplars of a concept. In this experiment, we test the hypothesis that the coding model for complexity is related to the variability of exemplars:  A concept is more conceptually complex if its exemplars are more variable. We test this prediction by presenting participants with a low and high variability concept and asking them to map a novel word to the concept. If conceptual complexity is related to exemplar variability, we predict that participants should be biased to map a longer word onto a concept with more variable exemplars.
+In the final experiment, we forced the token interpretation of our stimuli by presenting participants with several different exemplars of a concept. In this experiment, we test the hypothesis that the coding model for complexity is related to the variability of exemplars:  A concept is more conceptually complex if its exemplars are more variable. We test this prediction by presenting participants with a low and high variability concept and asking them to map a novel word to the concept. If conceptual complexity is related to exemplar variability, we predict that participants should be biased to map a longer word onto a concept with more variable exemplars.
 
 \subsection{Method}
 \subsubsection{Participants}
 396 participants completed the experiment.
 \subsubsection{Stimuli}
 The linguistic stimuli were identical to previous experiments. There were four classes of object stimuli (bugs, birds, flowers, and fish). Each participant saw 10 objects from two classes. For each object class, two features varied continuously (e.g. for bugs, body and head size). Size parameters for the low variability objects were  sampled from a low variability distribution, and size parameters for the high variability objects were  sampled from a high variability distribution (see Fig.\ \ref{fig:var_screen_shot} for sample stimuli sets).
+
+  \begin{figure}[t!]
+ \begin{center}
+  \includegraphics[width=4in]{figs/var_screen_shot.png}
+  \caption{\label{fig:var_screen_shot} Example stimuli sets in Experiment 7. High variability bugs are shown on top (Forest \#1) and low variability on bottom (Forest \# 2).}
+ \end{center}
+\end{figure}
+
 \subsubsection{Procedure}
 The procedure was identical to Exp. 6a, with the exception of the training display. During the training phase, participants were given the following instructions:
 
@@ -448,31 +461,27 @@ They then saw two 5-by-2 grids of question marks corresponding to two different 
 
   \begin{figure}[t!]
  \begin{center}
-  \includegraphics[width=4in]{figs/var_screen_shot.png}
-  \caption{\label{fig:var_screen_shot} Example stimuli sets in Experiment 7. High variability bugs are shown on top (Forest \#1) and low variability on bottom (Forest \# 2).}
- \end{center}
-\end{figure}
-
-\subsection{Results and Discussion}
-
-Selections of the high variability object did not differ as a function of word length (${\chi}^2$$(1) = 1.12$, $p = .29$; Fig.\ \ref{fig:var_plot}). However, 70 participants failed to correctly recall which category member was from the high-variability category, suggesting that participants may not have even noticed the critical manipulation. Nevertheless, even with these participants excluded, there was no difference between conditions (${\chi}^2$$(1) = .05$, $p = .82$). We thus find no evidence to suggest that exemplar variability is related to conceptual complexity.
-
-  \begin{figure}[t!]
- \begin{center}
   \includegraphics[width=4in]{figs/var_results.pdf}
   \caption{\label{fig:var_plot} Experiment 7 results: Proportion participants selecting the object associated with the high variability fact as a function language condition.  Error bars are bootstrapped 95\% confidence intervals.}
  \end{center}
 \end{figure}
 
+
+\subsection{Results and Discussion}
+
+Selections of the high variability object did not differ as a function of word length (${\chi}^2$$(1) = 1.12$, $p = .29$; Fig.\ \ref{fig:var_plot}). However, 70 participants failed to correctly recall which category member was from the high-variability category, suggesting that participants may not have even noticed the critical manipulation. Nevertheless, even with these participants excluded, there was no difference between conditions (${\chi}^2$$(1) = .05$, $p = .82$). We thus find no evidence to suggest that exemplar variability is related to conceptual complexity.
+
+
+
 \section{Conclusion}
-In this chapter, we sought to understand the nature of the conceptual complexity as reflected in the bias for participants to map longer words to more complex  referents. We used the framework of  Information Theory to quantify conceptual complexity. Critically, however, to develop a predictive theory of conceptual complexity using Information Theory we must identify the  coding model used by the cognitive system to represent meaning. This was the goal of the present chapter.  Across a series of seven studies, we find some support for the possibility that the units of the coding model may be related to linguistic units. We find no evidence that the coding model is related to the representation of exemplars. 
+In this chapter we sought to understand the nature of the conceptual complexity as reflected in the bias for participants to map longer words to more complex  referents. We used the framework of  Information Theory to quantify conceptual complexity. Critically, however, to develop a predictive theory of conceptual complexity using Information Theory we must identify the  coding model used by the cognitive system to represent meaning. This was the goal of the present chapter.  Across a series of seven studies, we find some support for the possibility that the units of the coding model may be related to linguistic units. We find no evidence that the coding model is related to the representation of exemplars. 
 
 The possibility that language is, or is closely related to, the coding model for complexity is a very intriguing possibility. One implication of  this proposal is that the set of primitive concepts  for a person may change with experience. In particular, the complexity of a concept might reduce when subsets of its primitives are bundled together and labeled \cite{bruner1956austin}. In other words, a concept that is initially complex could reduce in  complexity, such that it itself becomes an atomic unit in other concepts.  This proposal is consistent with a body of literature suggesting advantages in concept learning for labeled as opposed to unlabeled categories \cite<e.g.>{balaban1997,lupyan2007,sloutsky2001}. 
 
 %However, there is reason to think that other aspects of experience might affect the conceptual complexity of concepts since the length of words can change over time. For example, the word ``telephone" has become more typically ``phone" in standard usage. This type of  diachronic reduction in word length may be due to factors  unrelated to conceptual complexity (e.g.\ frequency of usage), but it might also reflect a decrease in conceptual complexity due to experience, beyond simply tokening the concept. Our work here does not directly address the character of the underlying  primitives, nor whether they are universal or innate or change over time. Rather, it assumes only that such units exist for a speaker and that lexical meanings can vary in the number of their compositional primitives. 
 
 
-In sum, the present set of studies  suggest that Information Theory may be productive framework for quantifying complexity in the domain of concepts. The ultimate utility of this approach, however, relies on identifying the  coding model used by the cognitive system, and this is a very challenging task. Nevertheless, the studies here begin to answer this question by pointing to linguistic representations as a  potential correlate of the coding model.
+In sum, the present set of studies  suggest that Information Theory may be a productive framework for quantifying complexity in the domain of concepts. The ultimate utility of this approach, however, relies on identifying the  coding model used by the cognitive system, and this is a very challenging task. Nevertheless, the studies here begin to answer this question by pointing to linguistic representations as a  potential correlate of the coding model.
 
 %the most productive framework for describing the notion of conceptual complexity may be conceptual primitives. Nevertheless, there is still much work to be done to understand what these primitives are.  Thus, a central challenge for this work moving forward will be to provide an account of the origin and nature of conceptual primitives and how they change over time, both ontogenetically and phylogenetically.
 
